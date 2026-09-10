@@ -18,11 +18,11 @@ function collectSearchText(word) {
   const parts = [word.ipa];
   for (const sense of word.senses) {
     for (const sd of sense.subdefinitions) {
-      parts.push(sd.ipa, sd.pos, sd.eng, sd.fra, sd.cf, sd.var, sd.other, sd.notes);
-      for (const ex of sd.examples || []) parts.push(ex.ipa, ex.eng, ex.fra);
+      parts.push(sd.ipa, sd.pos, sd.eng, sd.cf, sd.var, sd.other, sd.notes);
+      for (const ex of sd.examples || []) parts.push(ex.ipa, ex.eng);
       for (const d of [...(sd.derived || []), ...(sd.related || [])]) {
-        parts.push(d.ipa, d.pos, d.eng, d.fra, d.cf, d.var, d.other);
-        for (const ex of d.examples || []) parts.push(ex.ipa, ex.eng, ex.fra);
+        parts.push(d.ipa, d.pos, d.eng, d.cf, d.var, d.other);
+        for (const ex of d.examples || []) parts.push(ex.ipa, ex.eng);
       }
     }
   }
@@ -128,7 +128,10 @@ function renderPagination() {
   }
   paginationEl.innerHTML = `
     <button id="prev-btn" ${currentPage === 1 ? 'disabled' : ''}>&larr; Prev</button>
-    <span>Page ${currentPage} of ${totalPages}</span>
+    <span class="page-jump">
+      Page <input type="number" id="page-input" min="1" max="${totalPages}" value="${currentPage}">
+      of ${totalPages}
+    </span>
     <button id="next-btn" ${currentPage === totalPages ? 'disabled' : ''}>Next &rarr;</button>
   `;
   document.getElementById('prev-btn').addEventListener('click', () => {
@@ -138,6 +141,22 @@ function renderPagination() {
   document.getElementById('next-btn').addEventListener('click', () => {
     currentPage++;
     renderPage();
+  });
+
+  const pageInput = document.getElementById('page-input');
+  const jumpToPage = () => {
+    const n = Math.round(Number(pageInput.value));
+    const clamped = Math.min(totalPages, Math.max(1, Number.isFinite(n) ? n : currentPage));
+    if (clamped !== currentPage) {
+      currentPage = clamped;
+      renderPage();
+    } else {
+      pageInput.value = currentPage;
+    }
+  };
+  pageInput.addEventListener('change', jumpToPage);
+  pageInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') pageInput.blur();
   });
 }
 

@@ -27,10 +27,17 @@ header {
 }
 
 h1 {
-  margin: 0 0 0.75rem;
+  margin: 0;
   font-size: 1.5rem;
   font-weight: normal;
   letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin: 0.15rem 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 nav.site-nav {
@@ -101,9 +108,10 @@ nav.site-nav a:hover {
 }
 
 #result-count {
+  display: block;
+  margin-top: 0.5rem;
   font-size: 0.85rem;
   color: var(--muted);
-  white-space: nowrap;
 }
 
 main {
@@ -229,6 +237,36 @@ footer {
 }
 
 #pagination button:not(:disabled):hover {
+  border-color: var(--accent);
+}
+
+.page-jump {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+#page-input {
+  width: 3.2rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0.35rem 0.3rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--paper-raised);
+  color: var(--ink);
+  -moz-appearance: textfield;
+}
+
+#page-input::-webkit-outer-spin-button,
+#page-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#page-input:focus {
+  outline: none;
   border-color: var(--accent);
 }
 

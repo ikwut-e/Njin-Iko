@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 .DS_Store
+.claude/
 
 # Unresolved image licensing (public Instagram source, no publisher clearance) -
 # kept local only, not published to the public repo.
