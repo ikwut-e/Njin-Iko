@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.DS_Store
+
+# Unresolved image licensing (public Instagram source, no publisher clearance) -
+# kept local only, not published to the public repo.
+andoni_river.png
