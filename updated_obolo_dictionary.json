@@ -9399,6 +9399,25 @@
     "orthography": "gbuk"
   },
   {
+    "ipa": "háŋá",
+    "senses": [
+      {
+        "subdefinitions": [
+          {
+            "ipa": "háŋá",
+            "orthography": "han̄a",
+            "pos": "adv.",
+            "eng": "end, terminate",
+            "fra": "accomplir, terminer",
+            "cf": "sáŋá",
+            "var": "háːŋ"
+          }
+        ]
+      }
+    ],
+    "orthography": "han̄a"
+  },
+  {
     "ipa": "gʷâ",
     "senses": [
       {
@@ -13893,6 +13912,31 @@
     "orthography": "kọbọ"
   },
   {
+    "ipa": "kɔ̀hɔ̂m",
+    "senses": [
+      {
+        "subdefinitions": [
+          {
+            "ipa": "kɔ̀hɔ̂m",
+            "orthography": "kọhọm",
+            "pos": "n.",
+            "eng": "noise (of coughing)",
+            "fra": "bruit (de toux)",
+            "examples": [
+              {
+                "ipa": "érè î-kʷèːk járádìm kɔ̀hɔ̂m ńd͡ʒɔ́ k͡pě-nɔ́",
+                "orthography": "Ere îkweek yaradim, kọhọm njọ kpěnọ.",
+                "eng": "The place was very quiet, one could hear a pin drop.",
+                "fra": "il faisait un silence de mort"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "orthography": "kọhọm"
+  },
+  {
     "ipa": "kɔ̀lɔ̂",
     "senses": [
       {
@@ -14037,31 +14081,6 @@
       }
     ],
     "orthography": "kọt"
-  },
-  {
-    "ipa": "kɔ̀hɔ̂m",
-    "senses": [
-      {
-        "subdefinitions": [
-          {
-            "ipa": "kɔ̀hɔ̂m",
-            "orthography": "kọhọm",
-            "pos": "n.",
-            "eng": "noise (of coughing)",
-            "fra": "bruit (de toux)",
-            "examples": [
-              {
-                "ipa": "érè î-kʷèːk járádìm kɔ̀hɔ̂m ńd͡ʒɔ́ k͡pě-nɔ́",
-                "orthography": "Ere îkweek yaradim, kọhọm njọ kpěnọ.",
-                "eng": "The place was very quiet, one could hear a pin drop.",
-                "fra": "il faisait un silence de mort"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "orthography": "kọhọm"
   },
   {
     "ipa": "kúbɔ́k",
@@ -27613,11 +27632,7 @@
                 "fra": "Reine des cieux"
               }
             ]
-          }
-        ]
-      },
-      {
-        "subdefinitions": [
+          },
           {
             "ipa": "úgâ",
             "orthography": "uga",
@@ -30732,13 +30747,7 @@
             "fra": "tournoyer"
           }
         ]
-      }
-    ],
-    "orthography": "yak"
-  },
-  {
-    "ipa": "ják",
-    "senses": [
+      },
       {
         "subdefinitions": [
           {
@@ -31012,24 +31021,5 @@
       }
     ],
     "orthography": "yọt"
-  },
-  {
-    "ipa": "háŋá",
-    "senses": [
-      {
-        "subdefinitions": [
-          {
-            "ipa": "háŋá",
-            "orthography": "han̄a",
-            "pos": "adv.",
-            "eng": "end, terminate",
-            "fra": "accomplir, terminer",
-            "cf": "sáŋá",
-            "var": "háːŋ"
-          }
-        ]
-      }
-    ],
-    "orthography": "han̄a"
   }
 ]

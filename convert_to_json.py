@@ -4,7 +4,7 @@ import unicodedata
 import openpyxl
 
 # Obolo alphabetical order (digraphs are single sort units)
-ALPHABET = ['a', 'b', 'ch', 'd', 'e', 'f', 'g', 'gb', 'gw', 'i', 'j', 'k', 'kp',
+ALPHABET = ['a', 'b', 'ch', 'd', 'e', 'f', 'g', 'gb', 'h', 'gw', 'i', 'j', 'k', 'kp',
             'kw', 'l', 'm', 'n', 'n̄', 'nw', 'ny', 'o', 'ọ', 'p', 'r', 's', 't',
             'u', 'w', 'y']
 ALPHABET_RANK = {letter: i for i, letter in enumerate(ALPHABET)}
