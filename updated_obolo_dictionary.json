@@ -613,14 +613,32 @@
               {
                 "ipa": "ágàŋ-ísí",
                 "orthography": "agan̄-isi",
-                "eng": "north, forward, front",
-                "fra": "nord, devant"
+                "eng": "forward, front",
+                "fra": "devant"
               },
               {
                 "ipa": "ágàŋ-ùlòm",
                 "orthography": "agan̄-ulom",
-                "eng": "east, right-hand side",
-                "fra": "est, à droite"
+                "eng": "right-hand side",
+                "fra": "à droite"
+              },
+              {
+                "ipa": "ágàŋ-ùd͡ʒìt",
+                "orthography": "agan̄-ujit",
+                "eng": "left-hand side",
+                "fra": "à gauche"
+              },
+              {
+                "ipa": "ágàŋ-ùdûŋ",
+                "orthography": "agan̄-udun̄",
+                "eng": "backward",
+                "fra": "derrière"
+              },
+              {
+                "ipa": "ágàŋ ìɲɔ̀ŋ",
+                "orthography": "agan̄ inyọn̄",
+                "eng": "north",
+                "fra": "nord"
               },
               {
                 "ipa": "ágàŋ m̀bûm-úrá",
@@ -637,17 +655,16 @@
                 ]
               },
               {
-                "ipa": "ágàŋ-ùd͡ʒìt",
-                "orthography": "agan̄-ujit",
-                "eng": "west, left-hand side",
-                "fra": "ouest, à gauche",
-                "var": "ágàŋ ícêp-úrá"
+                "ipa": "ágàŋ ò-sìkí",
+                "orthography": "agan̄ osiki",
+                "eng": "south",
+                "fra": "sud"
               },
               {
-                "ipa": "ágàŋ-ùdûŋ",
-                "orthography": "agan̄-udun̄",
-                "eng": "south, backward",
-                "fra": "sud, derrière"
+                "ipa": "ágàŋ í-t͡ʃèp-úrá",
+                "orthography": "agan̄ ichepura",
+                "eng": "west",
+                "fra": "ouest"
               }
             ]
           }
@@ -2934,8 +2951,8 @@
             "fra": "parce que",
             "examples": [
               {
-                "ipa": "bǎːlék ì-kí-tùmú ínû ò-ɲîŋ mé lék íkàn",
-                "orthography": "Baalek ìkitumu inu ònyin̄ me lek ikan.",
+                "ipa": "bǎːlék ì-kí-tùmú ínû ò-ɲîŋ mèlék íkàn",
+                "orthography": "Baalek ìkitumu inu ònyin̄ melek ikan.",
                 "eng": "Because it talks about law and order.",
                 "fra": "parce qu'il s'agit de la loi et de l'ordre"
               }
