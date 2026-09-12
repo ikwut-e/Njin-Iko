@@ -271,6 +271,28 @@ def is_ke_me_low_tone(chunk):
     return len(chunk) == 3 and chunk[0] in ('k', 'm') and chunk[1] == 'e' and chunk[2] == GRAVE
 
 
+# Chunks that the monosyllabic-first-chunk heuristic below misidentifies as
+# verb prefixes but are actually the start of a nominal/onomatopoeic compound
+# - confirmed by manual review of every word this heuristic fires on.
+NOT_VERB_PREFIXES = {'fet', 'gwun̄', 'iin̄', 'chiéèn̄'}
+
+
+def is_untoned_fuse_prefix(chunk_tokens):
+    """kp-initial prefixes, 'kà', and 'mǐ': confirmed verb prefixes that
+    still fuse (inform hyphenation) but - unlike other verb prefixes - never
+    surface their own tone mark in display orthography."""
+    if not chunk_tokens:
+        return False
+    if chunk_tokens[0] == 'k' + TIE_BAR + 'p':
+        return True
+    toneless = [t for t in chunk_tokens if t not in TONE_MARKS]
+    if toneless == ['k', 'a'] and GRAVE in chunk_tokens:
+        return True
+    if toneless == ['m', 'i'] and CARON in chunk_tokens:
+        return True
+    return False
+
+
 def build_orthography(tokens, full_tone=False):
     """full_tone=True produces a reference form that keeps every tone mark
     (including acute/high) instead of the normal "acute is unmarked, only
@@ -283,9 +305,14 @@ def build_orthography(tokens, full_tone=False):
     for chunks in words:
         force_n = syllabic_ng_word_initial(chunks)
         is_verb_form = len(chunks) > 1 and count_nuclei(chunks[0]) == 1
+        if is_verb_form:
+            prefix_preview = orthography_chunk(chunks[0], True, force_n, False)
+            if unicodedata.normalize('NFC', prefix_preview) in NOT_VERB_PREFIXES:
+                is_verb_form = False
         rendered = []
         for ci, chunk in enumerate(chunks):
-            keep_tone = full_tone or (ci == 0 and is_verb_form) or (
+            untoned_fuse = ci == 0 and is_verb_form and is_untoned_fuse_prefix(chunk)
+            keep_tone = full_tone or (ci == 0 and is_verb_form and not untoned_fuse) or (
                 len(chunks) == 1 and is_ke_me_low_tone(chunk)
             )
             rendered.append(

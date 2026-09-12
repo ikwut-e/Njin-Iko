@@ -21,14 +21,14 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "until",
             "fra": "jusqu’à",
-            "var": "àbàjáːgê",
+            "var": "/àbàjáːgê/",
             "examples": [
               {
                 "ipa": "gʷúŋ î-sà àbǎːgê mǐ-gàk í-wéːk",
-                "orthography": "Gwun̄ îsa abaage mǐgak iweek.",
+                "orthography": "Gwun̄ îsa abaage migak iweek.",
                 "orthography_toned": "gwún̄ îsà àbàágê mǐgàk íwéék",
                 "eng": "The boy struggled until he fainted.",
                 "fra": "le garçon s’est débattu jusqu’à perdre connaissance"
@@ -254,7 +254,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém.",
+            "pos": "dem. pron.",
             "eng": "those, those ones",
             "fra": "ceux-là"
           }
@@ -522,7 +522,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém.",
+            "pos": "dem. pron.",
             "eng": "him",
             "fra": "lui"
           }
@@ -556,7 +556,7 @@
           {
             "eng": "dem. ind. pron. emph.",
             "fra": "celui-là, celle-là",
-            "other": "en opposition ̀a ó ' gwúgwú : celui-ci, celle-ci (déictique humain)"
+            "other": "in opposition to /ó ' gwúgwú/: this one, this one (human deictic)"
           }
         ]
       }
@@ -718,7 +718,7 @@
         "subdefinitions": [
           {
             "pos": "n.",
-            "cf": "ágɔ́ːk"
+            "cf": "/ágɔ́ːk/"
           }
         ]
       }
@@ -824,7 +824,7 @@
       {
         "subdefinitions": [
           {
-            "cf": "àɡ͡bàɡ͡bá"
+            "cf": "/àɡ͡bàɡ͡bá/"
           }
         ]
       }
@@ -946,7 +946,7 @@
             "pos": "n.",
             "eng": "witness",
             "fra": "témoin",
-            "other": "origine igbo",
+            "other": "Igbo origin",
             "derived": [
               {
                 "ipa": "tùmú ákáéꜝbé",
@@ -1155,7 +1155,7 @@
             "pos": "n.",
             "eng": "skin",
             "fra": "la peau",
-            "var": "ák͡pálék"
+            "var": "/ák͡pálék/"
           }
         ]
       }
@@ -1503,7 +1503,7 @@
             "pos": "n.",
             "eng": "bedbug; bug",
             "fra": "punaise",
-            "var": "ḿk͡pɔ́ òtákà ènè"
+            "var": "/ḿk͡pɔ́ òtákà ènè/"
           }
         ]
       }
@@ -1533,7 +1533,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "n. generic",
+            "pos": "generic n.",
             "eng": "metals for jewelry",
             "fra": "métaux pour la bijouterie"
           }
@@ -1681,7 +1681,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "indice pron. délocutif plu.",
+            "pos": "pl. pron. marker (delocutive)",
             "eng": "they, them",
             "fra": "eux",
             "examples": [
@@ -1709,7 +1709,7 @@
             "pos": "n.",
             "eng": "voice, greetings",
             "fra": "voix, salutation",
-            "other": "ámɔ̀n",
+            "other": "/ámɔ̀n/",
             "derived": [
               {
                 "ipa": "tɔ́p ámàn",
@@ -1746,8 +1746,8 @@
             "derived": [
               {
                 "ipa": "t͡ʃjêːŋ-ámáná",
-                "orthography": "chiéèn̄amana",
-                "orthography_toned": "chiéèn̄ámáná",
+                "orthography": "chieen̄-amana",
+                "orthography_toned": "chiéèn̄-ámáná",
                 "eng": "button hole",
                 "fra": "boutonnière"
               },
@@ -2050,7 +2050,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "adj. plu.",
+            "pos": "pl. adj.",
             "eng": "small ones, young ones",
             "fra": "les petits, les jeunes",
             "examples": [
@@ -2132,7 +2132,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "adj. superlatif",
+            "pos": "superl. adj.",
             "eng": "tiny",
             "fra": "tout petit",
             "derived": [
@@ -2381,7 +2381,7 @@
             "pos": "n.",
             "eng": "field of activity",
             "fra": "domaine d'activité",
-            "cf": "ágɔ́ːk",
+            "cf": "/ágɔ́ːk/",
             "examples": [
               {
                 "ipa": "m̀ɡ͡bɔ̀ î-kèm èd͡ʒì í-sâsà ùsèm kìd͡ʒì í-rɔ́ ínû mé átágɔ́ːk íkʷàːŋ gêːlék mé ùnàròn",
@@ -2405,7 +2405,7 @@
         "subdefinitions": [
           {
             "pos": "n.",
-            "cf": "ágɔ́ːk"
+            "cf": "/ágɔ́ːk/"
           }
         ]
       }
@@ -2511,7 +2511,7 @@
             "pos": "n.",
             "eng": "truth",
             "fra": "la vérité",
-            "var": "àtá-íkɔ̂",
+            "var": "/àtá-íkɔ̂/",
             "derived": [
               {
                 "ipa": "tùmû àtíkɔ̂",
@@ -2675,7 +2675,7 @@
                 "pos": "v.",
                 "eng": "swear",
                 "fra": "jurer",
-                "cf": "àwɔ́"
+                "cf": "/àwɔ́/"
               }
             ]
           }
@@ -2772,7 +2772,7 @@
             "pos": "n.",
             "eng": "grandma, old woman",
             "fra": "grand-mère, vieille femme",
-            "var": "ájǐlé, ájǐɟà"
+            "var": "/ájǐlé/, /ájǐɟà/"
           }
         ]
       }
@@ -2802,7 +2802,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "élocutif sg.",
+            "pos": "eloc. sg. marker",
             "eng": "definite future marker",
             "fra": "marqueur du futur",
             "other": "FUT1",
@@ -2892,7 +2892,7 @@
             ]
           },
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "because of",
             "fra": "à cause de, en raison de"
           }
@@ -2914,7 +2914,7 @@
             "examples": [
               {
                 "ipa": "árâŋ mǐ-bǎːŋ mé ìɲɔ̀ŋ ìkàsì",
-                "orthography": "Aran̄ mǐbaan̄ me inyọn̄ ikasi.",
+                "orthography": "Aran̄ mibaan̄ me inyọn̄ ikasi.",
                 "orthography_toned": "árân̄ mǐbàán̄ mé ìnyọ̀n̄ ìkàsì",
                 "eng": "There is a lot of oil spread on the table.",
                 "fra": "il y a de l'huile étalée sur la table"
@@ -3159,9 +3159,7 @@
       {
         "subdefinitions": [
           {
-            "ipa": "báŋá",
-            "orthography_toned": "bán̄á",
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "concerning",
             "fra": "concernant, au sujet de",
             "derived": [
@@ -3242,7 +3240,7 @@
             "examples": [
               {
                 "ipa": "ùsùŋ mǐ-bát",
-                "orthography": "Usun̄ mǐbat.",
+                "orthography": "Usun̄ mibat.",
                 "orthography_toned": "ùsùn̄ mǐbát",
                 "eng": "The soup is thick.",
                 "fra": "la sauce est épaisse"
@@ -3267,7 +3265,7 @@
             "examples": [
               {
                 "ipa": "ɔ́fɔ̂ntì móŋʷɔ̀n mǐ-bát",
-                "orthography": "Ọfọnti Monwọn mǐbat.",
+                "orthography": "Ọfọnti Monwọn mibat.",
                 "orthography_toned": "ọ́fộntì mónwọ̀n mǐbát",
                 "eng": "Monwon's dress is very dirty.",
                 "fra": "le vêtement de Monwon est très sale"
@@ -3294,12 +3292,16 @@
       {
         "subdefinitions": [
           {
-            "ipa": "bát ólóm",
-            "orthography": "bat olom",
-            "orthography_toned": "bát ólóm",
-            "pos": "v.",
-            "eng": "to get married",
-            "fra": "épouser un homme"
+            "derived": [
+              {
+                "ipa": "bát ólóm",
+                "orthography": "bat olom",
+                "orthography_toned": "bát ólóm",
+                "pos": "v.",
+                "eng": "to get married",
+                "fra": "épouser un homme"
+              }
+            ]
           }
         ]
       }
@@ -3308,49 +3310,12 @@
     "orthography_toned": "bát"
   },
   {
-    "ipa": "bé",
-    "senses": [
-      {
-        "subdefinitions": [
-          {
-            "pos": "morph. pron. rel.",
-            "eng": "that",
-            "fra": "que"
-          },
-          {
-            "pos": "conj.",
-            "eng": "that",
-            "fra": "que"
-          },
-          {
-            "ipa": "bê",
-            "orthography_toned": "bê",
-            "pos": "vt.",
-            "eng": "say",
-            "fra": "dire",
-            "examples": [
-              {
-                "ipa": "ò-bêbè",
-                "orthography": "Òbebe?",
-                "orthography_toned": "òbêbè",
-                "eng": "What did you say?",
-                "fra": "que dites-vous?"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "orthography": "be",
-    "orthography_toned": "bé"
-  },
-  {
     "ipa": "bè",
     "senses": [
       {
         "subdefinitions": [
           {
-            "pos": "marq. inacc. prog. plu.",
+            "pos": "pl. marker (impf. prog.)",
             "examples": [
               {
                 "ipa": "èd͡ʒì é-bê-rɔ̂rɔ̀",
@@ -3366,6 +3331,49 @@
     ],
     "orthography": "be",
     "orthography_toned": "bè"
+  },
+  {
+    "ipa": "bê",
+    "senses": [
+      {
+        "subdefinitions": [
+          {
+            "pos": "vt.",
+            "eng": "say",
+            "fra": "dire",
+            "derived": [
+              {
+                "ipa": "bé",
+                "orthography": "be",
+                "orthography_toned": "bé",
+                "pos": "conj.",
+                "eng": "that",
+                "fra": "que"
+              },
+              {
+                "ipa": "bé",
+                "orthography": "be",
+                "orthography_toned": "bé",
+                "pos": "morph. pron. rel.",
+                "eng": "that",
+                "fra": "que",
+                "examples": [
+                  {
+                    "ipa": "ò-bêbè",
+                    "orthography": "Òbebe?",
+                    "orthography_toned": "òbêbè",
+                    "eng": "What did you say?",
+                    "fra": "que dites-vous?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "orthography": "be",
+    "orthography_toned": "bê"
   },
   {
     "ipa": "béːk",
@@ -3563,9 +3571,7 @@
             "fra": "commencer"
           },
           {
-            "ipa": "béné",
-            "orthography_toned": "béné",
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "since, from",
             "fra": "depuis, à partir de",
             "examples": [
@@ -3680,7 +3686,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "FUT2. allocutif/délocutif sing.",
+            "pos": "FUT2 marker (alloc./deloc., sg.)",
             "eng": "prospective future marker",
             "examples": [
               {
@@ -4019,7 +4025,7 @@
             "pos": "conj.",
             "eng": "but",
             "fra": "mais",
-            "other": "origine anglais",
+            "other": "English origin",
             "examples": [
               {
                 "ipa": "bɔ̀tì mé èmèn úwù jà énê mî-ɲìŋ í-gòn",
@@ -4058,7 +4064,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém. pl.",
+            "pos": "dem. pl.",
             "eng": "those",
             "fra": "ceux-là",
             "derived": [
@@ -4317,7 +4323,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém. pl.",
+            "pos": "dem. pl.",
             "eng": "these",
             "fra": "ceux-ci",
             "derived": [
@@ -4679,9 +4685,6 @@
             ]
           },
           {
-            "ipa": "t͡ʃjóːk",
-            "orthography": "chiook",
-            "orthography_toned": "chióók",
             "pos": "v.",
             "eng": "wipe off, erase",
             "fra": "effacer"
@@ -4723,7 +4726,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "adv. comparatif, superlatif",
+            "pos": "compar./superl. adv.",
             "eng": "most",
             "fra": "plus",
             "examples": [
@@ -4784,7 +4787,17 @@
           {
             "pos": "v.",
             "eng": "cut down",
-            "fra": "faire tomber, abattre (arbre)"
+            "fra": "faire tomber, abattre (arbre)",
+            "derived": [
+              {
+                "ipa": "t͡ʃô éfǔːk",
+                "orthography": "cho efuuk",
+                "orthography_toned": "chô éfùúk",
+                "pos": "v.",
+                "eng": "to rest",
+                "fra": "se reposer, souffler"
+              }
+            ]
           }
         ]
       },
@@ -4805,18 +4818,6 @@
             ]
           }
         ]
-      },
-      {
-        "subdefinitions": [
-          {
-            "ipa": "t͡ʃô éfǔk",
-            "orthography": "cho efuk",
-            "orthography_toned": "chô éfǔk",
-            "pos": "v.",
-            "eng": "to rest",
-            "fra": "se reposer, souffler"
-          }
-        ]
       }
     ],
     "orthography": "cho",
@@ -4831,7 +4832,7 @@
             "pos": "adv.",
             "eng": "really, actually",
             "fra": "vraiment",
-            "other": "cɔ́bɔ̂",
+            "other": "/cɔ́bɔ̂/",
             "examples": [
               {
                 "ipa": "t͡ʃúbɔ́ rɔ̂",
@@ -5199,7 +5200,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "ind. pron. plu.",
+            "pos": "pl. pron. marker",
             "eng": "we, you, they",
             "fra": "nous, vous"
           }
@@ -5215,7 +5216,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. interr.",
+            "pos": "interr. pron.",
             "eng": "who",
             "fra": "qui",
             "examples": [
@@ -5343,7 +5344,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. plu.",
+            "pos": "dem. pl. pron.",
             "eng": "they, them",
             "fra": "eux, ceux",
             "examples": [
@@ -5368,7 +5369,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "marq. nom. pl.",
+            "pos": "nominal pl. marker",
             "eng": "people",
             "fra": "gens",
             "derived": [
@@ -5437,8 +5438,8 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. plu emphatique",
-            "cf": "è`bì"
+            "pos": "dem. pl. emph. pron.",
+            "cf": "/èbì/"
           }
         ]
       }
@@ -5566,7 +5567,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. délocutif plu.",
+            "pos": "pers. pron. (deloc., pl.)",
             "eng": "they",
             "fra": "eux"
           }
@@ -5582,7 +5583,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. plu.",
+            "pos": "dem. pl. pron.",
             "eng": "these ones",
             "fra": "ceux-ci"
           }
@@ -5598,7 +5599,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. anaphorique plu.",
+            "pos": "anaph. pl. pron.",
             "eng": "those",
             "fra": "ceux",
             "examples": [
@@ -5623,8 +5624,8 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. plu. emphatique",
-            "cf": "é ' cí"
+            "pos": "dem. pl. emph. pron.",
+            "cf": "/é ' cí/"
           }
         ]
       }
@@ -5740,7 +5741,7 @@
             "examples": [
               {
                 "ipa": "é-bé èbí ì-kʷêːk mé ísí éfét k͡pè-kí-d͡ʒǎːŋ lék",
-                "orthography": "Ebe ebi ìkweek me isi efet kpèkijaan̄ lek.",
+                "orthography": "Ebe ebi ìkweek me isi efet kpekijaan̄ lek.",
                 "orthography_toned": "ébé èbí ìkwéèk mé ísí éfét kpèkíjàán̄ lék",
                 "eng": "It is said that those who face (metaphoric) the wind are never well-looking.",
                 "fra": "on dit que ceux qui sont au devant de la scène ne se portent pas toujours très bien"
@@ -5834,7 +5835,7 @@
             "examples": [
               {
                 "ipa": "éfǔːk mǐ-tét èmì",
-                "orthography": "Efuuk mǐtet emi.",
+                "orthography": "Efuuk mitet emi.",
                 "orthography_toned": "éfùúk mǐtét èmì",
                 "eng": "I am tired, fed up.",
                 "fra": "je suis fatigué, j'en ai assez"
@@ -6135,7 +6136,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. élocutif plu.",
+            "pos": "pers. pron. (eloc., pl.)",
             "eng": "we",
             "fra": "nous"
           }
@@ -6611,7 +6612,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "in, inside",
             "fra": "dans, dedans",
             "derived": [
@@ -6636,7 +6637,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. élocutif sg.",
+            "pos": "pers. pron. (eloc., sg.)",
             "eng": "me",
             "fra": "moi"
           }
@@ -6697,7 +6698,7 @@
               },
               {
                 "ipa": "k͡pě-jáká í-tét írîŋ í-wá ènénén mé ókʷáːŋ",
-                "orthography": "Kpěyaka itet irin̄ iwa enenen me okwaan̄.",
+                "orthography": "Kpeyaka itet irin̄ iwa enenen me okwaan̄.",
                 "orthography_toned": "kpěyáká ítét írîn̄ íwá ènénén mé ókwáán̄",
                 "eng": "One no longer catches a lot of fish from the sea.",
                 "fra": "on n'attrape plus beaucoup de poisson de la mer"
@@ -6810,7 +6811,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. plu.",
+            "pos": "pers. pron. (pl.)",
             "eng": "you",
             "fra": "vous"
           }
@@ -7303,7 +7304,7 @@
               },
               {
                 "ipa": "únérjè mǐ-ɲé éwé m̀ɡ͡bɔ̀ kéjí",
-                "orthography": "Unerie mǐnye ewe mgbọ keyi.",
+                "orthography": "Unerie minye ewe mgbọ keyi.",
                 "orthography_toned": "únériè mǐnyé éwé m̀gbọ̀ kéyí",
                 "eng": "Food is very costly these days.",
                 "fra": "la nourriture est très chère ces jours-ci"
@@ -7404,7 +7405,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. sing.",
+            "pos": "dem. pron. (sg.)",
             "eng": "this one",
             "fra": "ceci, cela"
           }
@@ -7420,7 +7421,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dét. poss.",
+            "pos": "poss. det.",
             "eng": "that of",
             "fra": "celui de"
           }
@@ -7436,8 +7437,8 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. sg. emp.",
-            "cf": "é`jì"
+            "pos": "dem. pron. (sg., emph.)",
+            "cf": "/éjì/"
           }
         ]
       }
@@ -7457,7 +7458,7 @@
             "examples": [
               {
                 "ipa": "ŋ̀-ká-rjɔ̌ːŋ úgʷù ḿ-bà-ɲì fǎfǎ ǹsàbɔ́n íbâːŋ ké mǐ-tét èmì úk͡póːk",
-                "orthography": "Ǹkariọọn̄ ugwu mbanyi fafa nsabọn ibaan̄, ke mǐtet emi ukpook.",
+                "orthography": "Ǹkariọọn̄ ugwu mbanyi fafa nsabọn ibaan̄, ke mitet emi ukpook.",
                 "orthography_toned": "ǹkáriọ̀ọ́n̄ úgwù ḿbànyì fǎfǎ ǹsàbọ́n íbáàn̄ ké mǐtét èmì úkpóók",
                 "eng": "I don't know what medicine to give especially to a girl, it frightens me.",
                 "fra": "je ne sais pas quel médicament donner, surtout à une fille"
@@ -7530,7 +7531,7 @@
             "examples": [
               {
                 "ipa": "mǐ-fét",
-                "orthography": "Mǐfet.",
+                "orthography": "Mifet.",
                 "orthography_toned": "mǐfét",
                 "eng": "It is very light.",
                 "fra": "c'est très léger"
@@ -7539,8 +7540,8 @@
             "derived": [
               {
                 "ipa": "fét-lék",
-                "orthography": "fetlek",
-                "orthography_toned": "fétlék",
+                "orthography": "fet-lek",
+                "orthography_toned": "fét-lék",
                 "eng": "be fast, rapid, clever",
                 "fra": "être rapide, malin"
               }
@@ -7603,7 +7604,7 @@
             "examples": [
               {
                 "ipa": "ékʷút mǐ-ɲé éwé í-fjàt",
-                "orthography": "Ekwut mǐnye ewe ifiat.",
+                "orthography": "Ekwut minye ewe ifiat.",
                 "orthography_toned": "ékwút mǐnyé éwé ífiàt",
                 "eng": "Wrappers are rather too costly.",
                 "fra": "les pagnes coûtent trop cher"
@@ -7653,7 +7654,7 @@
             "examples": [
               {
                 "ipa": "î-fjéːk ènéꜝnén í-bé ké ámà t͡ʃì k͡pě-káːŋ àtá òníːŋ mè úwú úgʷùŋ",
-                "orthography": "Îfieek enenen ibe ke ama chi kpěkaan̄ ata oniin̄ mè uwu ugwun̄.",
+                "orthography": "Îfieek enenen ibe ke ama chi kpekaan̄ ata oniin̄ mè uwu ugwun̄.",
                 "orthography_toned": "îfiéék ènénén íbé ké ámà chì kpěkáán̄ àtá òníín̄ mè úwú úgwùn̄",
                 "eng": "It is very bad that these towns don't have good roads and hospitals.",
                 "fra": "c'est dommage que ces villages n'aient pas de bonnes routes ni d'hôpitaux"
@@ -7678,7 +7679,7 @@
                 "ipa": "fjéːk lék",
                 "orthography": "fieek lek",
                 "orthography_toned": "fiéék lék",
-                "pos": "lek",
+                "pos": "vi.",
                 "eng": "be emaciated, thin",
                 "fra": "être émacié, maigre"
               }
@@ -7861,7 +7862,7 @@
                 "orthography_toned": "ófít égwê",
                 "eng": "good evening",
                 "fra": "bonsoir",
-                "var": "òférégwê"
+                "var": "/òférégwê/"
               }
             ]
           }
@@ -8238,7 +8239,7 @@
         "subdefinitions": [
           {
             "pos": "adv.",
-            "cf": "gâːgá"
+            "cf": "/gâːgá/"
           }
         ]
       }
@@ -8265,7 +8266,7 @@
               },
               {
                 "ipa": "kà-lép míːŋ ì-gǎk ájâ",
-                "orthography": "Kàlep miin̄ ìgak aya.",
+                "orthography": "Kalep miin̄ ìgak aya.",
                 "orthography_toned": "kàlép míín̄ ìgǎk áyâ",
                 "eng": "Do not buy any more drinks.",
                 "fra": "n'achète plus de boisson"
@@ -8290,7 +8291,7 @@
             "examples": [
               {
                 "ipa": "mǐ-gàná",
-                "orthography": "Mǐgana.",
+                "orthography": "Migana.",
                 "orthography_toned": "mǐgàná",
                 "eng": "It's too much.",
                 "fra": "c'en est trop"
@@ -8649,7 +8650,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép",
+            "pos": "prep.",
             "eng": "following; as a result of",
             "fra": "suite à"
           }
@@ -9280,8 +9281,8 @@
             "pos": "adv.",
             "eng": "end, terminate",
             "fra": "accomplir, terminer",
-            "cf": "sáŋá",
-            "var": "háːŋ"
+            "cf": "/sáŋá/",
+            "var": "/háːŋ/"
           }
         ]
       }
@@ -9569,7 +9570,7 @@
             "pos": "n.",
             "eng": "child",
             "fra": "enfant",
-            "var": "gwúŋ",
+            "var": "/gwúŋ/",
             "examples": [
               {
                 "ipa": "gʷúŋ í-gàk ìk͡pòːŋ",
@@ -9617,15 +9618,15 @@
               },
               {
                 "ipa": "gʷúŋ-úwù",
-                "orthography": "gwun̄uwu",
-                "orthography_toned": "gwún̄úwù",
+                "orthography": "gwun̄-uwu",
+                "orthography_toned": "gwún̄-úwù",
                 "eng": "house help",
                 "fra": "domestique"
               },
               {
                 "ipa": "gʷúŋ-gʷúŋ",
-                "orthography": "gwun̄gwun̄",
-                "orthography_toned": "gwún̄gwún̄",
+                "orthography": "gwun̄-gwun̄",
+                "orthography_toned": "gwún̄-gwún̄",
                 "eng": "grandchild",
                 "fra": "petit-fils, petite-fille"
               }
@@ -9741,7 +9742,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "ind.pron. délocutif sg.",
+            "pos": "pron. marker (deloc., sg.)",
             "eng": "he, she, it",
             "fra": "il /elle, il imp."
           }
@@ -9750,7 +9751,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "morphème du consécutif"
+            "pos": "consec. morph."
           }
         ]
       }
@@ -9797,7 +9798,7 @@
         "subdefinitions": [
           {
             "pos": "n.",
-            "cf": "èbíbâːŋ"
+            "cf": "/èbíbâːŋ/"
           }
         ]
       }
@@ -9830,7 +9831,7 @@
             "pos": "conj.",
             "eng": "if, supposing",
             "fra": "si, à supposer que",
-            "var": "íbíbé"
+            "var": "/íbíbé/"
           }
         ]
       }
@@ -9886,7 +9887,7 @@
                 "orthography_toned": "íbòt úbújà",
                 "eng": "handle of knife",
                 "fra": "poignée de couteau",
-                "other": "Related: ótú úbúɟà"
+                "other": "Related: /ótú úbúɟà/"
               },
               {
                 "ipa": "íbòt ík͡pá",
@@ -10077,7 +10078,7 @@
                 "orthography_toned": "íchíp èbékê",
                 "eng": "coconut",
                 "fra": "noix de coco",
-                "var": "ìcóì èbèké"
+                "var": "/ìcóì èbèké/"
               },
               {
                 "ipa": "ít͡ʃíp-ík͡pɔ́k",
@@ -10085,7 +10086,7 @@
                 "orthography_toned": "íchíp-íkpọ́k",
                 "eng": "palm kernel",
                 "fra": "noix de palmier",
-                "var": "ìćwíkpɔ́k",
+                "var": "/ìćwíkpɔ́k/",
                 "examples": [
                   {
                     "ipa": "árâŋ ít͡ʃíp-ík͡pɔ́k",
@@ -10349,7 +10350,7 @@
         "subdefinitions": [
           {
             "pos": "conj.",
-            "cf": "í ' féné"
+            "cf": "/í ' féné/"
           }
         ]
       }
@@ -10485,7 +10486,7 @@
             "examples": [
               {
                 "ipa": "gʷɔ́ŋ jà mǐ-jɔ́t úgʷém í-gó",
-                "orthography": "Gwọn̄ ya mǐyọt ugwem igo.",
+                "orthography": "Gwọn̄ ya miyọt ugwem igo.",
                 "orthography_toned": "gwọ́n̄ yà mǐyọ́t úgwém ígó",
                 "eng": "That child is too difficult.",
                 "fra": "il est trop difficile comme enfant"
@@ -10569,8 +10570,8 @@
         ]
       }
     ],
-    "orthography": "iin̄iin̄",
-    "orthography_toned": "íín̄ììn̄"
+    "orthography": "iin̄-iin̄",
+    "orthography_toned": "íín̄-ììn̄"
   },
   {
     "ipa": "íd͡ʒè",
@@ -10740,7 +10741,7 @@
           {
             "eng": "it is so, like that",
             "fra": "comme cela, c'est vrai",
-            "var": " ì-kéjâ",
+            "var": "/ì-kéjâ/",
             "derived": [
               {
                 "ipa": "ì-ká-ꜝré ìkâ",
@@ -11365,7 +11366,7 @@
             "examples": [
               {
                 "ipa": "ík͡pó ḿk͡pɔ́ gê k͡pè-kí-sí",
-                "orthography": "Ikpo mkpọ ge kpèkisi.",
+                "orthography": "Ikpo mkpọ ge kpekisi.",
                 "orthography_toned": "íkpó ḿkpọ́ gê kpèkísí",
                 "eng": "They have no work at all.",
                 "fra": "ils n'ont aucun travail"
@@ -11403,7 +11404,7 @@
             "pos": "n.",
             "eng": "money",
             "fra": "argent",
-            "var": "ìk͡pòkò",
+            "var": "/ìk͡pòkò/",
             "derived": [
               {
                 "ipa": "ík͡pá-ìk͡pòːŋ",
@@ -11493,7 +11494,7 @@
             "pos": "n.",
             "eng": "cocoyam",
             "fra": "taro",
-            "var": "édè èbékè"
+            "var": "/édè èbékè/"
           }
         ]
       }
@@ -11704,7 +11705,7 @@
             "pos": "n.",
             "eng": "love",
             "fra": "amour",
-            "cf": "ímá"
+            "cf": "/ímá/"
           }
         ]
       }
@@ -11983,7 +11984,7 @@
                 "examples": [
                   {
                     "ipa": "ísí-ìɲɔ̀ŋ mǐ-dùgú",
-                    "orthography": "Isi-inyọn̄ mǐdugu.",
+                    "orthography": "Isi-inyọn̄ midugu.",
                     "orthography_toned": "ísí-ìnyọ̀n̄ mǐdùgú",
                     "eng": "The sky is cloudy.",
                     "fra": "le ciel est couvert, nuageux"
@@ -12015,7 +12016,7 @@
             ]
           },
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "on",
             "fra": "sur, dessus"
           }
@@ -12061,7 +12062,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "under, beneath",
             "fra": "sous, dessous"
           }
@@ -12242,7 +12243,7 @@
         "subdefinitions": [
           {
             "pos": "conj.",
-            "cf": "íré"
+            "cf": "/íré/"
           }
         ]
       }
@@ -12961,7 +12962,7 @@
             "derived": [
               {
                 "ipa": "kà-nú",
-                "orthography": "kànu",
+                "orthography": "kanu",
                 "orthography_toned": "kànú",
                 "eng": "don't come",
                 "fra": "ne viens pas"
@@ -13139,7 +13140,7 @@
             "pos": "n.",
             "eng": "Saturday",
             "fra": "samedi",
-            "other": "Related: ǹdè"
+            "other": "Related: /ǹdè/"
           }
         ]
       }
@@ -13257,7 +13258,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "since",
             "fra": "depuis",
             "examples": [
@@ -13422,7 +13423,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém.",
+            "pos": "dem.",
             "eng": "that",
             "fra": "cela"
           }
@@ -13489,7 +13490,7 @@
                 "orthography_toned": "kén mún̄",
                 "eng": "take a bath",
                 "fra": "se laver",
-                "var": "kérémúŋ",
+                "var": "/kérémúŋ/",
                 "examples": [
                   {
                     "ipa": "mé m̀ɡ͡bɔ̀ î-mù-bé ké èbí mèlék kàŋ mé-kí-kén múŋ íbèbèn úkɔ́ːk kàŋ í-to mè ìd͡ʒɔ̀ŋ mè í-wùlú í-rɔ̀ŋ mé múŋ",
@@ -13546,7 +13547,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém.",
+            "pos": "dem.",
             "eng": "that one",
             "fra": "cela"
           }
@@ -13562,7 +13563,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém.",
+            "pos": "dem.",
             "eng": "this",
             "fra": "ceci"
           }
@@ -13578,7 +13579,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "marq. d'inacc. prog.",
+            "pos": "impf. prog. marker",
             "eng": "be doing sth.",
             "fra": "être en train de faire qqch."
           }
@@ -13679,7 +13680,7 @@
             "examples": [
               {
                 "ipa": "érè î-kʷèːk járádìm kɔ̀hɔ̂m ńd͡ʒɔ́ k͡pě-nɔ́",
-                "orthography": "Ere îkweek yaradim, kọhọm njọ kpěnọ.",
+                "orthography": "Ere îkweek yaradim, kọhọm njọ kpenọ.",
                 "orthography_toned": "érè îkwèèk yárádìm kọ̀hộm ńjọ́ kpěnọ́",
                 "eng": "The place was very quiet, one could hear a pin drop.",
                 "fra": "il faisait un silence de mort"
@@ -13818,7 +13819,7 @@
             "examples": [
               {
                 "ipa": "k͡pě-jáká í-kɔ̀t í-táká írîŋ ò-náŋà mé ókʷáːŋ t͡ʃí mí-d͡ʒè ólù árâŋ-ìd͡ʒɔ̀ŋ ò-kí-dɔ̀ŋɔ́ mé lék",
-                "orthography": "Kpěyaka ikọt itaka irin̄ ònan̄a me okwaan̄ chi mije olu aran̄-ijọn̄ òkidọn̄ọ me lek.",
+                "orthography": "Kpeyaka ikọt itaka irin̄ ònan̄a me okwaan̄ chi mije olu aran̄-ijọn̄ òkidọn̄ọ me lek.",
                 "orthography_toned": "kpěyáká íkọ̀t ítáká írîn̄ ònán̄à mé ókwáán̄ chí míjè ólù árân̄-ìjọ̀n̄ òkídọ̀n̄ọ́ mé lék",
                 "eng": "One can no longer eat fish from the river because they smell petrol.",
                 "fra": "on ne peut plus manger de poissons pêchés dans la rivière parce qu'ils ont le goût du pétrole"
@@ -13881,7 +13882,7 @@
             "pos": "v.",
             "eng": "be",
             "fra": "être",
-            "var": "kwéːk",
+            "var": "/kwéːk/",
             "examples": [
               {
                 "ipa": "ánâm î-tàkà òtútúːk àk͡pà òkúp mé úkó",
@@ -13920,7 +13921,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "morph. inacc. nég. élocutif sg.",
+            "pos": "neg. impf. morph. (eloc., sg.)",
             "eng": "will not",
             "derived": [
               {
@@ -13968,7 +13969,7 @@
             "examples": [
               {
                 "ipa": "èbí ì-kí-gè ík͡pá mǐ-k͡pà í-wélé ínû ò-fólék ùkʷòːk mè úfjàlèk èbí ágâŋ ókɔ́rɔ́eꜝté é-kí-bɔ̀kɔ́ mé èmèn ík͡pá kìbàŋ",
-                "orthography": "Ebi ìkige ikpa mǐkpa iwele inu òfolek ukwook mè ufialek ebi agan̄ Okọrọete ekibọkọ me emen ikpa kiban̄.",
+                "orthography": "Ebi ìkige ikpa mikpa iwele inu òfolek ukwook mè ufialek ebi agan̄ Okọrọete ekibọkọ me emen ikpa kiban̄.",
                 "orthography_toned": "èbí ìkígè íkpá mǐkpà íwélé ínû òfólék ùkwòòk mè úfiàlèk èbí ágân̄ ókọ́rọ́eté ékíbọ̀kọ́ mé èmèn íkpá kìbàn̄",
                 "eng": "Journalists have written clearly in their papers about the problems and hardship facing the people of Okoroete.",
                 "fra": "les journalistes ont dévoilé dans leurs journaux les problèmes dont souffrent les gens de Okoroete"
@@ -14021,9 +14022,10 @@
       {
         "subdefinitions": [
           {
-            "pos": "v. pl. de k͡pǎt",
+            "pos": "v.",
             "eng": "to string",
-            "fra": "enfiler"
+            "fra": "enfiler",
+            "other": "pl. of /k͡pǎt/"
           }
         ]
       }
@@ -14117,7 +14119,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "idéòph.",
+            "pos": "ideoph.",
             "eng": "finished",
             "fra": "fini"
           }
@@ -14136,7 +14138,7 @@
             "pos": "interr.",
             "eng": "what",
             "fra": "quel",
-            "cf": "k͡pâ"
+            "cf": "/k͡pâ/"
           }
         ]
       }
@@ -14166,7 +14168,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "morph. inacc. fut. nég. pl.",
+            "pos": "neg. fut. impf. morph. (pl.)",
             "eng": "`èjì kpè-sì` : we will not go",
             "fra": "nous n'irons pas"
           }
@@ -14200,13 +14202,13 @@
       {
         "subdefinitions": [
           {
-            "pos": "morph. neg. inacc. pl.",
+            "pos": "neg. impf. morph. (pl.)",
             "eng": "not yet",
             "fra": "pas encore",
             "examples": [
               {
                 "ipa": "èd͡ʒì k͡pěː-sî",
-                "orthography": "Eji kpèési.",
+                "orthography": "Eji kpeesi.",
                 "orthography_toned": "èjì kpèésî",
                 "eng": "We have not yet gone.",
                 "fra": "nous ne sommes pas encore allés"
@@ -14427,7 +14429,7 @@
             "examples": [
               {
                 "ipa": "ík͡pí mǐ-ɲíŋ èmèn údɔ̀ŋ k͡prók",
-                "orthography": "Ikpi mǐnyin̄ emen udọn̄ kprok.",
+                "orthography": "Ikpi minyin̄ emen udọn̄ kprok.",
                 "orthography_toned": "íkpí mǐnyín̄ èmèn údọ̀n̄ kprók",
                 "eng": "The rat just entered the hole in a flash.",
                 "fra": "le rat est rentré dans le trou comme un éclair"
@@ -14578,7 +14580,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "nég.",
+            "pos": "neg.",
             "eng": "none, there is not",
             "fra": "aucun, il n'y a pas",
             "examples": [
@@ -14676,8 +14678,8 @@
       {
         "subdefinitions": [
           {
-            "pos": "vi. plu.",
-            "cf": "kwú"
+            "pos": "vi. pl.",
+            "cf": "/kwú/"
           }
         ]
       }
@@ -15419,14 +15421,14 @@
             "examples": [
               {
                 "ipa": "èd͡ʒì k͡pě-ɡ͡báːŋ érè gê í-lùk",
-                "orthography": "Eji kpěgbaan̄ ere ge iluk.",
+                "orthography": "Eji kpegbaan̄ ere ge iluk.",
                 "orthography_toned": "èjì kpěgbáán̄ érè gê ílùk",
                 "eng": "We are not living at the same place.",
                 "fra": "nous n'habitons pas au même endroit"
               },
               {
                 "ipa": "érè ń-lùk-bé mǐ-d͡ʒɔ́ŋɔ́ érè ènéꜝnén",
-                "orthography": "Ere nlukbe mǐjọn̄ọ ere enenen.",
+                "orthography": "Ere nlukbe mijọn̄ọ ere enenen.",
                 "orthography_toned": "érè ńlùkbé mǐjọ́n̄ọ́ érè ènénén",
                 "eng": "Where I live is very far away.",
                 "fra": "j'habite très loin"
@@ -15461,7 +15463,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "FUT1. éloc. sg."
+            "pos": "FUT1 marker (eloc., sg.)"
           }
         ]
       },
@@ -15558,7 +15560,7 @@
         "subdefinitions": [
           {
             "pos": "adv.",
-            "cf": "bèrèbèt"
+            "cf": "/bèrèbèt/"
           }
         ]
       }
@@ -15648,7 +15650,7 @@
             "pos": "n.",
             "eng": "dawn",
             "fra": "aube",
-            "var": "ḿbràgwè"
+            "var": "/ḿbràgwè/"
           }
         ]
       }
@@ -15883,7 +15885,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "úkàŋ n.",
+            "pos": "n.",
             "eng": "glowing embers, charcoal",
             "fra": "braises"
           }
@@ -15949,7 +15951,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "in, on, at",
             "fra": "dans, sur"
           }
@@ -15974,7 +15976,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "ind.pron. marq. fut. plu."
+            "pos": "pl. pron. marker (future)"
           }
         ]
       }
@@ -15991,7 +15993,7 @@
             "pos": "adj.",
             "eng": "alone",
             "fra": "seul",
-            "var": "móːgê"
+            "var": "/móːgê/"
           }
         ]
       }
@@ -16005,7 +16007,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "with, among",
             "fra": "avec, parmi"
           }
@@ -16291,7 +16293,7 @@
             "pos": "adv.",
             "eng": "immediately, at once",
             "fra": "immédiatement, aussitôt",
-            "var": "m̀ɡ͡bɔ̀ jǎːgê"
+            "var": "/m̀ɡ͡bɔ̀ jǎːgê/"
           }
         ]
       }
@@ -16534,7 +16536,7 @@
         "subdefinitions": [
           {
             "pos": "adj.",
-            "cf": "m̀ɡ͡búùdù",
+            "cf": "/m̀ɡ͡búùdù/",
             "examples": [
               {
                 "ipa": "ík͡pá î-rè àtáfì ògʷú íkʷàːŋ èbékè béné mé àdàsi sí rê m̀ɡ͡búrùdûŋ úsèn kàŋ",
@@ -16620,7 +16622,7 @@
             "examples": [
               {
                 "ipa": "mǐ-tóp",
-                "orthography": "Mǐtop.",
+                "orthography": "Mitop.",
                 "orthography_toned": "mǐtóp",
                 "eng": "It is very sweet.",
                 "fra": "c'est très délicieux"
@@ -16637,7 +16639,7 @@
             "examples": [
               {
                 "ipa": "mǐ-tùmú í-bé",
-                "orthography": "Mǐtumu ibe.",
+                "orthography": "Mitumu ibe.",
                 "orthography_toned": "mǐtùmú íbé",
                 "eng": "Then he said that.",
                 "fra": "puis il a dit que"
@@ -16682,7 +16684,7 @@
                 "orthography_toned": "míín̄ òbòlò",
                 "eng": "palmwine",
                 "fra": "vin de palmier",
-                "other": "Related: úgɔ̀t"
+                "other": "Related: /úgɔ̀t/"
               }
             ]
           }
@@ -17151,7 +17153,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "déloc. sg.",
+            "pos": "deloc. sg.",
             "examples": [
               {
                 "ipa": "mô-nù",
@@ -17202,7 +17204,7 @@
             "pos": "v.",
             "eng": "take",
             "fra": "prendre",
-            "var": "mɔ̀nɔ̂",
+            "var": "/mɔ̀nɔ̂/",
             "examples": [
               {
                 "ipa": "òtútûːk ènè é-k͡pɔ́ːk í-mɔ̀nɔ́ ḿk͡pɔ́ jà kúbɔ́k î-rè ḿk͡pɔ́ ífìt ífìt",
@@ -17269,7 +17271,7 @@
             "pos": "n.",
             "eng": "water",
             "fra": "eau",
-            "var": "ḿmú, múŋ",
+            "var": "/ḿmú/, /múŋ/",
             "derived": [
               {
                 "ipa": "údɔ̀ŋ-múŋ",
@@ -17399,7 +17401,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "and",
             "fra": "et"
           }
@@ -17408,7 +17410,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "vi",
+            "pos": "vi.",
             "eng": "be patient",
             "fra": "être patient"
           }
@@ -17424,7 +17426,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "ind. pron. éloc. sg.",
+            "pos": "pron. marker (eloc., sg.)",
             "eng": "I",
             "fra": "je"
           }
@@ -17484,7 +17486,7 @@
             "pos": "n.",
             "eng": "cow",
             "fra": "vache",
-            "other": "origine haoussa"
+            "other": "Hausa origin"
           }
         ]
       }
@@ -17578,7 +17580,7 @@
                 "ipa": "nàŋá sǔŋ",
                 "orthography": "nan̄a sun̄",
                 "orthography_toned": "nàn̄á sǔn̄",
-                "pos": "súŋ v.",
+                "pos": "v.",
                 "eng": "keep in order, arrange",
                 "fra": "ordonner, ranger"
               }
@@ -17713,7 +17715,7 @@
             "pos": "n.",
             "eng": "week",
             "fra": "semaine",
-            "other": "Related: kálá ' rúné",
+            "other": "Related: /kálá ' rúné/",
             "examples": [
               {
                 "ipa": "úsèn òkúp mé ǹdè",
@@ -17776,7 +17778,7 @@
             "pos": "n.",
             "eng": "chimpanzee",
             "fra": "chimpanzé",
-            "var": "ńrjɔ̀k"
+            "var": "/ńrjɔ̀k/"
           }
         ]
       }
@@ -18231,7 +18233,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "marq. inchoatif dériv.",
+            "pos": "deriv. inch. marker",
             "eng": "come",
             "fra": "venir",
             "examples": [
@@ -18433,7 +18435,7 @@
             "examples": [
               {
                 "ipa": "ǹd͡ʒíd͡ʒín kàŋ mǐ-tét èmì",
-                "orthography": "Njijin kan̄ mǐtet emi.",
+                "orthography": "Njijin kan̄ mitet emi.",
                 "orthography_toned": "ǹjíjín kàn̄ mǐtét èmì",
                 "eng": "I feel sorry for him.",
                 "fra": "il me fait pitié"
@@ -18533,7 +18535,7 @@
             "examples": [
               {
                 "ipa": "kɔ̀hɔ̂m ńd͡ʒɔ́ k͡pě-nɔ́",
-                "orthography": "Kọhọm njọ kpěnọ.",
+                "orthography": "Kọhọm njọ kpenọ.",
                 "orthography_toned": "kọ̀hộm ńjọ́ kpěnọ́",
                 "eng": "There was absolute silence, even a slight cough was not heard.",
                 "fra": "il y avait un silence de mort, personne ne faisait aucun bruit"
@@ -18704,7 +18706,7 @@
             "pos": "n.",
             "eng": "thought, mind",
             "fra": "pensée, vouloir",
-            "var": "ŋ̀két",
+            "var": "/ŋ̀két/",
             "examples": [
               {
                 "ipa": "sǎ ŋ̀kéːk kʷù rɔ̂",
@@ -19216,7 +19218,7 @@
                 "examples": [
                   {
                     "ipa": "k͡pè-kí-sà úk͡pɔ́ːk úbɔ́k í-ní-mú ǹsék gʷɔ́ŋ éd͡ʒêːk mé ótú",
-                    "orthography": "Kpèkisa ukpọọk ubọk inimu nsek gwọn̄ ejeek me otu.",
+                    "orthography": "Kpekisa ukpọọk ubọk inimu nsek gwọn̄ ejeek me otu.",
                     "orthography_toned": "kpèkísà úkpọ́ọ́k úbọ́k ínímú ǹsék gwọ́n̄ éjéèk mé ótú",
                     "eng": "One does not visit a newborn baby with empty hands.",
                     "fra": "on ne va pas voir un nouveau-né avec les mains vides"
@@ -19504,10 +19506,10 @@
       {
         "subdefinitions": [
           {
-            "pos": "v. dériv.",
+            "pos": "deriv. v.",
             "eng": "come",
             "fra": "venir",
-            "cf": "impératif: nǎ",
+            "cf": "imperative: /nǎ/",
             "examples": [
               {
                 "ipa": "òtútûːk èbíbâːŋ mê-nù ńtìtíːŋ mé pɔ̀tát͡ʃɔ̀t",
@@ -19530,7 +19532,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. poss.",
+            "pos": "poss. pron.",
             "eng": "my",
             "fra": "mon, ma",
             "examples": [
@@ -19871,7 +19873,7 @@
             "examples": [
               {
                 "ipa": "kà-jáká ì-ɲǎn múŋ ì-fó ìɲɔ̀ŋ",
-                "orthography": "Kàyaka ìnyan mun̄ ìfo inyọn̄.",
+                "orthography": "Kayaka ìnyan mun̄ ìfo inyọn̄.",
                 "orthography_toned": "kàyáká ìnyǎn mún̄ ìfó ìnyọ̀n̄",
                 "eng": "Don't splash water anymore.",
                 "fra": "ne fais plus jaillir de l'eau"
@@ -20101,7 +20103,7 @@
             "pos": "adv.",
             "eng": "really, principally",
             "fra": "vraiment, principalement",
-            "var": "ɲúmú",
+            "var": "/ɲúmú/",
             "examples": [
               {
                 "ipa": "ḿk͡pɔ́ é-kí-ɲímí í-sà í-bénélék m̀ɡ͡bɔ̀ kèjí î-rè ik͡pá",
@@ -20291,7 +20293,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "ind.pron. alloc. sg.",
+            "pos": "pron. marker (alloc., sg.)",
             "eng": "you",
             "fra": "vous, tu"
           }
@@ -20326,7 +20328,7 @@
             "pos": "n.",
             "eng": "catfish",
             "fra": "poisson-chat",
-            "var": "òjá"
+            "var": "/òjá/"
           }
         ]
       }
@@ -20384,7 +20386,7 @@
             "pos": "adj.",
             "eng": "first",
             "fra": "premier",
-            "cf": "àdàsí"
+            "cf": "/àdàsí/"
           }
         ]
       }
@@ -20635,7 +20637,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "prép.",
+            "pos": "prep.",
             "eng": "towards, concerning",
             "fra": "vers, concernant, au sujet de",
             "examples": [
@@ -20761,7 +20763,7 @@
             "pos": "n.",
             "eng": "shark",
             "fra": "requin",
-            "var": "ófúrúmá"
+            "var": "/ófúrúmá/"
           }
         ]
       }
@@ -20807,10 +20809,10 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. déloc.",
+            "pos": "dem. pron. (deloc.)",
             "eng": "him",
             "fra": "lui, celui-là, cella-là",
-            "var": "ágâ"
+            "var": "/ágâ/"
           }
         ]
       }
@@ -20881,10 +20883,10 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. délocutif",
+            "pos": "pers. pron. (deloc.)",
             "eng": "he, she",
             "fra": "lui, elle",
-            "var": "ógôt"
+            "var": "/ógôt/"
           }
         ]
       }
@@ -20934,7 +20936,7 @@
             "examples": [
               {
                 "ipa": "ógùgó gʷɔ́ŋ jà mǐ-ɲé",
-                "orthography": "Ogugo gwọn̄ ya mǐnye.",
+                "orthography": "Ogugo gwọn̄ ya minye.",
                 "orthography_toned": "ógùgó gwọ́n̄ yà mǐnyé",
                 "eng": "He is strong in spirit.",
                 "fra": "il est fort en esprit"
@@ -21098,7 +21100,7 @@
         "subdefinitions": [
           {
             "pos": "n.",
-            "cf": "òɡ͡bòɡ͡bó"
+            "cf": "/òɡ͡bòɡ͡bó/"
           }
         ]
       }
@@ -21115,7 +21117,7 @@
             "pos": "n.",
             "eng": "hurricane",
             "fra": "ouragan",
-            "var": "òɡ͡búrùrù"
+            "var": "/òɡ͡búrùrù/"
           }
         ]
       }
@@ -21177,7 +21179,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. délocutif sing.",
+            "pos": "pers. pron. (deloc., sg.)",
             "eng": "him, her",
             "fra": "lui, elle",
             "examples": [
@@ -21194,7 +21196,7 @@
                 "ipa": "óꜝgʷúgʷú",
                 "orthography": "ogwugwu",
                 "orthography_toned": "ógwúgwú",
-                "pos": "pron. dét. emph. déloc.",
+                "pos": "det. pron. (emph., deloc.)",
                 "eng": "this one",
                 "fra": "celui-ci"
               }
@@ -21212,7 +21214,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dét.",
+            "pos": "det. pron.",
             "eng": "he, him, she",
             "fra": "celui",
             "derived": [
@@ -21315,7 +21317,7 @@
             "examples": [
               {
                 "ipa": "kà-jáká ì-k͡pɔ́k ì-rɔ́ òd͡ʒélèk ínû jà órɔ́ òfífí",
-                "orthography": "Kàyaka ìkpọk ìrọ ojelek inu ya orọ ofifi.",
+                "orthography": "Kayaka ìkpọk ìrọ ojelek inu ya orọ ofifi.",
                 "orthography_toned": "kàyáká ìkpọ́k ìrọ́ òjélèk ínû yà órọ́ òfífí",
                 "eng": "Don't repeat what you did.",
                 "fra": "ne fais plus une chose pareille"
@@ -21693,7 +21695,7 @@
         "subdefinitions": [
           {
             "pos": "adj.",
-            "cf": "òk͡pá"
+            "cf": "/òk͡pá/"
           }
         ]
       }
@@ -21732,7 +21734,7 @@
       {
         "subdefinitions": [
           {
-            "cf": "òk͡pá",
+            "cf": "/òk͡pá/",
             "derived": [
               {
                 "ipa": "òk͡pátú gʷɔ́ŋ",
@@ -23060,7 +23062,7 @@
                 "pos": "n.",
                 "eng": "blade of knife",
                 "fra": "lame de couteau",
-                "other": "Related: íbòt úbúɟà"
+                "other": "Related: /íbòt úbúɟà/"
               }
             ]
           }
@@ -23133,7 +23135,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "adv. interr.",
+            "pos": "interr. adv.",
             "eng": "where",
             "fra": "où",
             "examples": [
@@ -23168,7 +23170,7 @@
             "pos": "n.",
             "eng": "God",
             "fra": "Dieu",
-            "var": "àwàd͡ʒì"
+            "var": "/àwàd͡ʒì/"
           }
         ]
       }
@@ -23224,7 +23226,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. allocutif sing.",
+            "pos": "pers. pron. (alloc., sg.)",
             "eng": "you",
             "fra": "vous, toi"
           }
@@ -23702,7 +23704,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. pers. déloc. sg.",
+            "pos": "pers. pron. (deloc., sg.)",
             "eng": "he, she",
             "fra": "il, elle",
             "examples": [
@@ -23816,7 +23818,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "dém.",
+            "pos": "dem.",
             "eng": "there",
             "fra": "là"
           }
@@ -23888,7 +23890,7 @@
         "subdefinitions": [
           {
             "pos": "adv.",
-            "cf": "rǎ"
+            "cf": "/rǎ/"
           }
         ]
       }
@@ -23927,7 +23929,7 @@
             "examples": [
               {
                 "ipa": "ébèk mǐ-rák èmì",
-                "orthography": "Ebek mǐrak emi.",
+                "orthography": "Ebek mirak emi.",
                 "orthography_toned": "ébèk mǐrák èmì",
                 "eng": "I am very thirsty.",
                 "fra": "j'ai la gorge sèche, j'ai très soif"
@@ -24051,7 +24053,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "v. copule",
+            "pos": "copula v.",
             "eng": "be",
             "fra": "être"
           }
@@ -24713,7 +24715,7 @@
             "pos": "v.",
             "eng": "to wound",
             "fra": "blesser",
-            "var": "sǎːk únán"
+            "var": "/sǎːk únán/"
           }
         ]
       }
@@ -24746,7 +24748,7 @@
             "pos": "adv.",
             "eng": "before",
             "fra": "avant",
-            "var": "sábùm"
+            "var": "/sábùm/"
           }
         ]
       }
@@ -24894,16 +24896,18 @@
             "fra": "enlever"
           },
           {
-            "ipa": "sáŋâ úbɔ́k mé lék",
-            "orthography": "san̄a ubọk me lek",
-            "orthography_toned": "sán̄â úbọ́k mé lék",
-            "eng": "leave alone",
-            "fra": "laisser tombé",
             "derived": [
               {
-                "ipa": "sáŋá mé lék",
+                "ipa": "sáŋâ úbɔ́k mé lék",
+                "orthography": "san̄a ubọk me lek",
+                "orthography_toned": "sán̄â úbọ́k mé lék",
+                "eng": "leave alone",
+                "fra": "laisser tombé"
+              },
+              {
+                "ipa": "sáŋâ mé lék",
                 "orthography": "san̄a me lek",
-                "orthography_toned": "sán̄á mé lék",
+                "orthography_toned": "sán̄â mé lék",
                 "eng": "apart from",
                 "fra": "à part"
               }
@@ -24927,7 +24931,7 @@
             "examples": [
               {
                 "ipa": "kà-ɲí ŋ̀gá kʷu sásàːk",
-                "orthography": "Kànyi nga kwu sasaak.",
+                "orthography": "Kanyi nga kwu sasaak.",
                 "orthography_toned": "kànyí ǹgá kwu sásààk",
                 "eng": "Do not disturb your mother.",
                 "fra": "ne dérange pas ta mère"
@@ -25013,7 +25017,7 @@
             "pos": "adv.",
             "eng": "too, also",
             "fra": "aussi, également",
-            "var": "sí ' sí",
+            "var": "/sí ' sí/",
             "examples": [
               {
                 "ipa": "î-rè èjí ꜝŋá ꜝsí",
@@ -25553,7 +25557,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "vi",
+            "pos": "vi.",
             "eng": "finish",
             "fra": "finir, s'achever"
           }
@@ -25569,7 +25573,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "vt",
+            "pos": "vt.",
             "eng": "noisy, make noise",
             "fra": "bruyant",
             "derived": [
@@ -25944,7 +25948,7 @@
     "orthography_toned": "tét"
   },
   {
-    "ipa": "tíbí",
+    "ipa": "tíbî",
     "senses": [
       {
         "subdefinitions": [
@@ -25958,8 +25962,6 @@
       {
         "subdefinitions": [
           {
-            "ipa": "tíbî",
-            "orthography_toned": "tíbî",
             "pos": "vt.",
             "eng": "pierce",
             "fra": "percer, vriller, évider"
@@ -25968,7 +25970,7 @@
       }
     ],
     "orthography": "tibi",
-    "orthography_toned": "tíbí"
+    "orthography_toned": "tíbî"
   },
   {
     "ipa": "tǐːŋ",
@@ -26429,7 +26431,7 @@
         "subdefinitions": [
           {
             "pos": "adj.",
-            "cf": "sɔ́ntíːk"
+            "cf": "/sɔ́ntíːk/"
           }
         ]
       }
@@ -27045,7 +27047,7 @@
             "pos": "adj.",
             "eng": "another",
             "fra": "un autre",
-            "cf": "òfífí"
+            "cf": "/òfífí/"
           }
         ]
       }
@@ -27091,7 +27093,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "n. et adj.",
+            "pos": "n. & adj.",
             "eng": "flesh",
             "fra": "chair"
           },
@@ -27267,7 +27269,7 @@
             "pos": "n.",
             "eng": "palmwine tree",
             "fra": "palmier à vin",
-            "other": "Related: míːŋ òbòlò"
+            "other": "Related: /míːŋ òbòlò/"
           }
         ]
       }
@@ -27613,7 +27615,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "n. nom prop. de personne",
+            "pos": "proper n. (person's name)",
             "eng": "comfort",
             "fra": "réconfort"
           }
@@ -28357,7 +28359,7 @@
         "subdefinitions": [
           {
             "pos": "n.",
-            "cf": "ínórjè",
+            "cf": "/ínórjè/",
             "examples": [
               {
                 "ipa": "gàrí î-rè únérjè ò-kí-ɲì énê úɲé mé-kɔ̂t-bé í-sà ísí ówùwà íkʷàːŋ úɲé",
@@ -28444,7 +28446,7 @@
             "examples": [
               {
                 "ipa": "ífìt jà mǐ-kʷéːk únúnán",
-                "orthography": "Ifit ya mǐkweek ununan.",
+                "orthography": "Ifit ya mikweek ununan.",
                 "orthography_toned": "ífìt yà mǐkwéék únúnán",
                 "eng": "That play is dangerous.",
                 "fra": "ce jeu-là paraît dangereux"
@@ -28651,7 +28653,7 @@
             "pos": "n.",
             "eng": "food",
             "fra": "nourriture",
-            "cf": "ínôrjè"
+            "cf": "/ínôrjè/"
           }
         ]
       }
@@ -28989,7 +28991,7 @@
             "examples": [
               {
                 "ipa": "ùsíní mé lék ífìt ǹsàbɔ́n í-t͡ʃèp míd͡ʒè ǹsàbɔ́n m̀ɡ͡bɔ̀ kèjí k͡pè-jáká í-kí-fìt ówùwà ífìt t͡ʃà",
-                "orthography": "Usini me lek ifit nsabọn ichep mije nsabọn mgbọ keyi kpèyaka ikifit owuwa ifit cha.",
+                "orthography": "Usini me lek ifit nsabọn ichep mije nsabọn mgbọ keyi kpeyaka ikifit owuwa ifit cha.",
                 "orthography_toned": "ùsíní mé lék ífìt ǹsàbọ́n íchèp míjè ǹsàbọ́n m̀gbọ̀ kèyí kpèyáká íkífìt ówùwà ífìt chà",
                 "eng": "Some of the children's games are lost because children of nowadays no longer play most of these games.",
                 "fra": "certains des jeux des enfants ont disparu parce que les enfants d'aujourd'hui n'y jouent plus"
@@ -29633,7 +29635,7 @@
                 "examples": [
                   {
                     "ipa": "íkɔ̂ kìbàŋ mǐ-kʷéːk újɔ́t-újɔ́t",
-                    "orthography": "Ikọ kiban̄ mǐkweek uyọt-uyọt.",
+                    "orthography": "Ikọ kiban̄ mikweek uyọt-uyọt.",
                     "orthography_toned": "íkộ kìbàn̄ mǐkwéék úyọ́t-úyọ́t",
                     "eng": "Their case seems rather difficult.",
                     "fra": "leur procès semble très difficile"
@@ -29859,7 +29861,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "idéòph.",
+            "pos": "ideoph.",
             "eng": "wide open",
             "fra": "grand ouvert"
           }
@@ -30142,7 +30144,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dem. sg.",
+            "pos": "dem. pron. (sg.)",
             "eng": "that",
             "fra": "celui-là",
             "examples": [
@@ -30232,13 +30234,13 @@
       {
         "subdefinitions": [
           {
-            "pos": "adv",
+            "pos": "adv.",
             "eng": "turn",
             "fra": "tourner",
-            "var": "jáːk"
+            "var": "/jáːk/"
           },
           {
-            "pos": "adv",
+            "pos": "adv.",
             "eng": "again, afresh",
             "fra": "encore, de nouveau",
             "examples": [
@@ -30359,7 +30361,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "pron. dém. sg.",
+            "pos": "dem. pron. (sg.)",
             "eng": "this",
             "fra": "ceci",
             "examples": [
@@ -30458,7 +30460,7 @@
       {
         "subdefinitions": [
           {
-            "pos": "vi",
+            "pos": "vi.",
             "eng": "difficult, complicated",
             "fra": "être difficile, compliqué",
             "derived": [

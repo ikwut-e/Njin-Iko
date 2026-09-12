@@ -69,8 +69,9 @@ def tone_sort_key(toned_orthography):
 
 
 def leaf_data(row):
-    data = {"ipa": row.get("IPA")}
-    for key, header in (("orthography", "ORTHOGRAPHY"), ("orthography_toned", "ORTHOGRAPHY (TONED)"),
+    data = {}
+    for key, header in (("ipa", "IPA"), ("orthography", "ORTHOGRAPHY"),
+                         ("orthography_toned", "ORTHOGRAPHY (TONED)"),
                          ("pos", "POS"), ("eng", "ENG"), ("fra", "FRA"), ("cf", "CF"),
                          ("var", "VAR"), ("other", "OTHER"), ("notes", "NOTES")):
         val = row.get(header)
