@@ -135,6 +135,19 @@ main {
   color: var(--accent);
 }
 
+/* orthography is the primary display form throughout; IPA is always
+   secondary, shown in slashes, smaller and muted */
+.ipa-line {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.headword-ipa {
+  font-size: 0.95rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
 /* outer grouping: sense */
 .sense {
   margin-top: 0.5rem;
@@ -158,6 +171,21 @@ main {
   margin-right: 0.3rem;
 }
 
+/* shown only when a subdef's own form differs from the word's headword,
+   e.g. "bát ólóm" (to get married) under the headword "bát" */
+.subdef-form {
+  margin-bottom: 0.15rem;
+}
+
+.subdef-ortho {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.subdef-ipa {
+  font-size: 0.85rem;
+}
+
 .pos {
   font-style: italic;
   color: var(--muted);
@@ -174,13 +202,18 @@ main {
   margin: 0.4rem 0;
 }
 
-.example .ex-ipa {
+.example .ex-ortho {
   color: var(--ink);
   font-style: italic;
 }
 
+.example .ex-ipa {
+  font-size: 0.85rem;
+  margin-top: 0.05rem;
+}
+
 .example .ex-gloss {
-  margin-top: 0.1rem;
+  margin-top: 0.15rem;
 }
 
 .child-entry {
@@ -188,9 +221,17 @@ main {
   margin: 0.15rem 0;
 }
 
-.child-entry .child-ipa {
+.child-entry .child-ortho {
   color: var(--ink);
-  font-style: italic;
+  font-weight: bold;
+}
+
+.child-entry .child-ipa {
+  font-size: 0.85rem;
+}
+
+.child-entry .child-gloss {
+  margin-top: 0.05rem;
 }
 
 .child-label {

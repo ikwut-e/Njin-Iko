@@ -15,14 +15,14 @@ function normalize(s) {
 }
 
 function collectSearchText(word) {
-  const parts = [word.ipa];
+  const parts = [word.ipa, word.orthography];
   for (const sense of word.senses) {
     for (const sd of sense.subdefinitions) {
-      parts.push(sd.ipa, sd.pos, sd.eng, sd.cf, sd.var, sd.other, sd.notes);
-      for (const ex of sd.examples || []) parts.push(ex.ipa, ex.eng);
+      parts.push(sd.ipa, sd.orthography, sd.pos, sd.eng, sd.cf, sd.var, sd.other, sd.notes);
+      for (const ex of sd.examples || []) parts.push(ex.ipa, ex.orthography, ex.eng);
       for (const d of [...(sd.derived || []), ...(sd.related || [])]) {
-        parts.push(d.ipa, d.pos, d.eng, d.cf, d.var, d.other);
-        for (const ex of d.examples || []) parts.push(ex.ipa, ex.eng);
+        parts.push(d.ipa, d.orthography, d.pos, d.eng, d.cf, d.var, d.other);
+        for (const ex of d.examples || []) parts.push(ex.ipa, ex.orthography, ex.eng);
       }
     }
   }
@@ -37,11 +37,18 @@ function escapeHtml(s) {
     .replace(/>/g, '&gt;');
 }
 
+function renderIpaLine(ipa, extraClass) {
+  if (!ipa) return '';
+  return `<div class="ipa-line${extraClass ? ' ' + extraClass : ''}">/${escapeHtml(ipa)}/</div>`;
+}
+
 function renderExample(ex) {
   const eng = ex.eng ? escapeHtml(ex.eng) : '';
+  const orthoText = ex.orthography || ex.ipa;
   return `
     <div class="example">
-      <div class="ex-ipa">${escapeHtml(ex.ipa)}</div>
+      <div class="ex-ortho">${escapeHtml(orthoText)}</div>
+      ${renderIpaLine(ex.ipa, 'ex-ipa')}
       <div class="ex-gloss">${eng}</div>
     </div>`;
 }
@@ -49,16 +56,19 @@ function renderExample(ex) {
 function renderChild(d, label) {
   const pos = d.pos ? `<span class="pos">${escapeHtml(d.pos)}</span>` : '';
   const eng = d.eng ? escapeHtml(d.eng) : '';
+  const orthoText = d.orthography || d.ipa;
   const examples = (d.examples || []).map(renderExample).join('');
   return `
     <div class="child-entry">
       <span class="child-label">${label}</span>
-      <span class="child-ipa">${escapeHtml(d.ipa)}</span> ${pos}${eng}
+      <span class="child-ortho">${escapeHtml(orthoText)}</span>
+      ${renderIpaLine(d.ipa, 'child-ipa')}
+      <div class="child-gloss">${pos}${eng}</div>
       ${examples ? `<div class="examples">${examples}</div>` : ''}
     </div>`;
 }
 
-function renderSubdef(subdef, letter) {
+function renderSubdef(subdef, letter, wordOrthography) {
   const letterHtml = letter ? `<span class="subdef-letter">${letter}.</span>` : '';
   const pos = subdef.pos ? `<span class="pos">${escapeHtml(subdef.pos)}</span>` : '';
   const eng = subdef.eng ? escapeHtml(subdef.eng) : '';
@@ -71,9 +81,20 @@ function renderSubdef(subdef, letter) {
   const derived = (subdef.derived || []).map(d => renderChild(d, 'Derived')).join('');
   const related = (subdef.related || []).map(d => renderChild(d, 'Related')).join('');
 
+  // Only show this subdef's own orthography/IPA when it's a distinct form
+  // from the word's headword (e.g. "bát ólóm" under "bát") - otherwise the
+  // headword above already establishes it and repeating it is just clutter.
+  const distinctForm = subdef.orthography && subdef.orthography !== wordOrthography;
+  const formBlock = distinctForm
+    ? `<div class="subdef-form">
+         <span class="subdef-ortho">${escapeHtml(subdef.orthography)}</span>
+         ${renderIpaLine(subdef.ipa, 'subdef-ipa')}
+       </div>`
+    : '';
+
   return `
     <div class="subdef">
-      ${letterHtml}${pos}${eng}
+      ${letterHtml}${formBlock}${pos}${eng}
       ${cfVarOther ? `<div class="cf-var-other">${cfVarOther}</div>` : ''}
     </div>
     ${examples ? `<div class="examples">${examples}</div>` : ''}
@@ -82,11 +103,11 @@ function renderSubdef(subdef, letter) {
   `;
 }
 
-function renderSense(sense, num) {
+function renderSense(sense, num, wordOrthography) {
   const numHtml = num ? `<span class="sense-num">${num}.</span>` : '';
   const multi = sense.subdefinitions.length > 1;
   const subdefs = sense.subdefinitions
-    .map((sd, i) => renderSubdef(sd, multi ? String.fromCharCode(97 + i) : null))
+    .map((sd, i) => renderSubdef(sd, multi ? String.fromCharCode(97 + i) : null, wordOrthography))
     .join('');
   return `
     <div class="sense">
@@ -96,12 +117,14 @@ function renderSense(sense, num) {
 
 function renderWord(word) {
   const multi = word.senses.length > 1;
+  const orthoText = word.orthography || word.ipa;
   const senses = word.senses
-    .map((s, i) => renderSense(s, multi ? String(i + 1) : null))
+    .map((s, i) => renderSense(s, multi ? String(i + 1) : null, word.orthography))
     .join('');
   return `
     <article class="entry">
-      <div class="headword">${escapeHtml(word.ipa)}</div>
+      <div class="headword">${escapeHtml(orthoText)}</div>
+      ${renderIpaLine(word.ipa, 'headword-ipa')}
       ${senses}
     </article>`;
 }

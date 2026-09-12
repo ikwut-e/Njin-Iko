@@ -2,19 +2,13 @@ import json
 import sys
 import openpyxl
 
-COL_IPA, COL_TYPE, COL_POS, COL_ENG, COL_FRA, COL_CF, COL_VAR, COL_OTHER, COL_INDEX, COL_NOTES = range(10)
-
-
-def cell(row, col):
-    return row[col] if col < len(row) else None
-
 
 def leaf_data(row):
-    data = {"ipa": cell(row, COL_IPA)}
-    for key, col in (("pos", COL_POS), ("eng", COL_ENG), ("fra", COL_FRA),
-                      ("cf", COL_CF), ("var", COL_VAR), ("other", COL_OTHER),
-                      ("notes", COL_NOTES)):
-        val = cell(row, col)
+    data = {"ipa": row.get("IPA")}
+    for key, header in (("orthography", "ORTHOGRAPHY"), ("pos", "POS"), ("eng", "ENG"),
+                         ("fra", "FRA"), ("cf", "CF"), ("var", "VAR"), ("other", "OTHER"),
+                         ("notes", "NOTES")):
+        val = row.get(header)
         if val is not None and val != "":
             data[key] = val
     return data
@@ -28,7 +22,9 @@ def convert(rows):
 
     def new_word(row):
         nonlocal word, sense, subdef, example_target
-        word = {"ipa": cell(row, COL_IPA), "senses": []}
+        word = {"ipa": row.get("IPA"), "senses": []}
+        if row.get("ORTHOGRAPHY"):
+            word["orthography"] = row.get("ORTHOGRAPHY")
         words.append(word)
         new_sense(row)
 
@@ -45,8 +41,8 @@ def convert(rows):
         example_target = subdef
 
     for row in rows:
-        rtype = cell(row, COL_TYPE)
-        index = cell(row, COL_INDEX)
+        rtype = row.get("TYPE")
+        index = row.get("INDEX")
         if rtype is None or rtype == "":
             warnings.append(f"row {index}: blank TYPE, treated as 'word'")
             rtype = "word"
@@ -78,13 +74,15 @@ def convert(rows):
                 warnings.append(f"row {index}: 'example' with no open subdefinition/derived/related, treated as 'word'")
                 new_word(row)
             else:
-                ex = {"ipa": cell(row, COL_IPA)}
-                if cell(row, COL_ENG):
-                    ex["eng"] = cell(row, COL_ENG)
-                if cell(row, COL_FRA):
-                    ex["fra"] = cell(row, COL_FRA)
-                if cell(row, COL_NOTES):
-                    ex["notes"] = cell(row, COL_NOTES)
+                ex = {"ipa": row.get("IPA")}
+                if row.get("ORTHOGRAPHY"):
+                    ex["orthography"] = row.get("ORTHOGRAPHY")
+                if row.get("ENG"):
+                    ex["eng"] = row.get("ENG")
+                if row.get("FRA"):
+                    ex["fra"] = row.get("FRA")
+                if row.get("NOTES"):
+                    ex["notes"] = row.get("NOTES")
                 example_target.setdefault("examples", []).append(ex)
         else:
             warnings.append(f"row {index}: unknown TYPE '{rtype}', treated as 'word'")
@@ -99,8 +97,9 @@ def main():
 
     wb = openpyxl.load_workbook(src, data_only=True)
     ws = wb.active
-    rows = list(ws.iter_rows(min_row=2, values_only=True))
-    rows = [r for r in rows if any(v is not None for v in r)]
+    headers = [c.value for c in ws[1]]
+    raw_rows = list(ws.iter_rows(min_row=2, values_only=True))
+    rows = [dict(zip(headers, r)) for r in raw_rows if any(v is not None for v in r)]
 
     words, warnings = convert(rows)
 
