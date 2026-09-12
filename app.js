@@ -143,11 +143,13 @@ function renderWord(word) {
 function renderPage() {
   const start = (currentPage - 1) * PER_PAGE;
   const pageItems = visibleWords.slice(start, start + PER_PAGE);
+  const showHeadings = !searchInput.value.trim();
 
   if (pageItems.length === 0) {
     listEl.innerHTML = `<div class="empty-state">No matching entries.</div>`;
   } else {
     listEl.innerHTML = pageItems.map((word, i) => {
+      if (!showHeadings) return renderWord(word);
       const globalIndex = start + i;
       const unit = firstAlphabetUnit(word.orthography || word.ipa);
       const prevUnit = globalIndex > 0
