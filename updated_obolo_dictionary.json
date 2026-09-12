@@ -637,8 +637,8 @@
                 ]
               },
               {
-                "ipa": "ágàŋ-ùjìt",
-                "orthography": "agan̄-uyit",
+                "ipa": "ágàŋ-ùd͡ʒìt",
+                "orthography": "agan̄-ujit",
                 "eng": "west, left-hand side",
                 "fra": "ouest, à gauche",
                 "var": "ágàŋ ícêp-úrá"
@@ -2068,8 +2068,8 @@
             "fra": "les petits, les jeunes",
             "examples": [
               {
-                "ipa": "ánâm èt͡ʃí ílílé mèlék èt͡ʃí ásábón mî-gɔ̌ːk í-núꜝsí",
-                "orthography": "Anam echi ilile melek echi asabon mîgọọk inusi.",
+                "ipa": "ánâm èt͡ʃí ílílé mèlék èt͡ʃí ásábón mî-gɔ̌ːk í-nú ꜝsí",
+                "orthography": "Anam echi ilile melek echi asabon mîgọọk inu si.",
                 "eng": "The animals assembled, the old and the young ones.",
                 "fra": "les animaux se sont rassemblés, les vieux comme les jeunes"
               }
@@ -2081,12 +2081,12 @@
     "orthography": "asabon"
   },
   {
-    "ipa": "àsàkʷúǹ",
+    "ipa": "àsàkʷún",
     "senses": [
       {
         "subdefinitions": [
           {
-            "ipa": "àsàkʷúǹ",
+            "ipa": "àsàkʷún",
             "orthography": "asakwun",
             "pos": "n.",
             "eng": "crocodile",

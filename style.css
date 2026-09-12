@@ -138,7 +138,6 @@ main {
 /* orthography is the primary display form throughout; IPA is always
    secondary, shown in slashes, smaller and muted */
 .ipa-line {
-  font-style: italic;
   color: var(--muted);
 }
 
