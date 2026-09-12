@@ -174,22 +174,37 @@ def main():
     words, warnings = convert(rows)
 
     has_orthography = any(w.get("orthography") for w in words)
+    exceptions = []
     for w in words:
+        headword = w.get("orthography") or w.get("ipa")
         for s in w["senses"]:
             for subdef in s["subdefinitions"]:
                 word_ref = subdef.pop("_word_ref")
-                if has_orthography:
-                    # a subdef's own ipa/orthography is often identical to
-                    # the word's headword (most directly when it's literally
-                    # the same source row that opened the word) - drop each
-                    # field independently when it matches, rather than
-                    # repeating it for every single word entry. Only done
-                    # when this dataset actually has orthography data -
-                    # rowland_oke_edition (no ORTHOGRAPHY column) stays a
-                    # complete, unedited digitization with nothing stripped.
-                    for key in ("ipa", "orthography", "orthography_toned"):
-                        if subdef.get(key) == word_ref.get(key):
-                            subdef.pop(key, None)
+                # a subdef's own ipa/orthography is often identical to the
+                # word's headword (most directly when it's literally the same
+                # source row that opened the word) - drop each field
+                # independently when it matches, rather than repeating it for
+                # every entry. Applies to both datasets: when a field
+                # genuinely differs (e.g. a subdef with its own distinct
+                # phrase), it's kept and flagged below for review.
+                for key in ("ipa", "orthography", "orthography_toned"):
+                    sub_val, word_val = subdef.get(key), word_ref.get(key)
+                    same = sub_val == word_val or (
+                        sub_val is not None and word_val is not None
+                        and unicodedata.normalize("NFC", sub_val) == unicodedata.normalize("NFC", word_val)
+                    )
+                    if same:
+                        subdef.pop(key, None)
+                    elif key in subdef:
+                        exceptions.append(
+                            f"{headword}: subdef {key}='{subdef.get(key)}' "
+                            f"differs from word {key}='{word_ref.get(key)}'"
+                        )
+
+    if exceptions:
+        print(f"\n{len(exceptions)} subdef/word field difference(s) kept (not redundant):", file=sys.stderr)
+        for e in exceptions:
+            print(" -", e, file=sys.stderr)
 
     if has_orthography:
         keyed = [
