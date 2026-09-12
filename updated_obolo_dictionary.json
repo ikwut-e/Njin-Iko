@@ -611,26 +611,26 @@
             "fra": "côté, direction",
             "derived": [
               {
-                "ipa": "ágàŋ-ísí",
-                "orthography": "agan̄-isi",
+                "ipa": "ágàŋísí",
+                "orthography": "agan̄isi",
                 "eng": "forward, front",
                 "fra": "devant"
               },
               {
-                "ipa": "ágàŋ-ùlòm",
-                "orthography": "agan̄-ulom",
+                "ipa": "ágàŋùlòm",
+                "orthography": "agan̄ulom",
                 "eng": "right-hand side",
                 "fra": "à droite"
               },
               {
-                "ipa": "ágàŋ-ùd͡ʒìt",
-                "orthography": "agan̄-ujit",
+                "ipa": "ágàŋùd͡ʒìt",
+                "orthography": "agan̄ujit",
                 "eng": "left-hand side",
                 "fra": "à gauche"
               },
               {
-                "ipa": "ágàŋ-ùdûŋ",
-                "orthography": "agan̄-udun̄",
+                "ipa": "ágàŋùdûŋ",
+                "orthography": "agan̄udun̄",
                 "eng": "backward",
                 "fra": "derrière"
               },
@@ -662,7 +662,7 @@
               },
               {
                 "ipa": "ágàŋ í-t͡ʃèp-úrá",
-                "orthography": "agan̄ ichepura",
+                "orthography": "agan̄ ichep-ura",
                 "eng": "west",
                 "fra": "ouest"
               }
