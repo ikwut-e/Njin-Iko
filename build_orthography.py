@@ -238,7 +238,18 @@ def orthography_chunk(chunk_tokens, keep_tone, force_first_ng_as_n, is_last_chun
             out.append('n' if (i == 0 and force_first_ng_as_n) else 'n̄')
         elif t == LONG:
             if out and out[-1]:
-                out.append(out[-1][0])  # double the bare vowel (no tone mark)
+                base = out[-1][0]
+                tone = out[-1][1:] if len(out[-1]) > 1 else ''
+                if tone == CIRCUMFLEX:  # HL falling -> H then L across the two moras
+                    out[-1] = base + ACUTE
+                    out.append(base + GRAVE)
+                elif tone == CARON:  # LH rising -> L then H across the two moras
+                    out[-1] = base + GRAVE
+                    out.append(base + ACUTE)
+                elif tone in (ACUTE, GRAVE):  # level tone -> same tone on both moras
+                    out.append(base + tone)
+                else:
+                    out.append(base)  # no tone attached - bare vowel on both
             i += 1
             continue
         elif t in TONE_MARKS:

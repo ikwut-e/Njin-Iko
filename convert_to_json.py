@@ -70,9 +70,9 @@ def tone_sort_key(toned_orthography):
 
 def leaf_data(row):
     data = {"ipa": row.get("IPA")}
-    for key, header in (("orthography", "ORTHOGRAPHY"), ("pos", "POS"), ("eng", "ENG"),
-                         ("fra", "FRA"), ("cf", "CF"), ("var", "VAR"), ("other", "OTHER"),
-                         ("notes", "NOTES")):
+    for key, header in (("orthography", "ORTHOGRAPHY"), ("orthography_toned", "ORTHOGRAPHY (TONED)"),
+                         ("pos", "POS"), ("eng", "ENG"), ("fra", "FRA"), ("cf", "CF"),
+                         ("var", "VAR"), ("other", "OTHER"), ("notes", "NOTES")):
         val = row.get(header)
         if val is not None and val != "":
             data[key] = val
@@ -90,7 +90,8 @@ def convert(rows):
         word = {"ipa": row.get("IPA"), "senses": []}
         if row.get("ORTHOGRAPHY"):
             word["orthography"] = row.get("ORTHOGRAPHY")
-        word["_toned"] = row.get("ORTHOGRAPHY (TONED)") or ""
+        if row.get("ORTHOGRAPHY (TONED)"):
+            word["orthography_toned"] = row.get("ORTHOGRAPHY (TONED)")
         words.append(word)
         new_sense(row)
 
@@ -103,6 +104,7 @@ def convert(rows):
     def new_subdef(row):
         nonlocal subdef, example_target
         subdef = leaf_data(row)
+        subdef["_word_ref"] = word  # used to strip redundant fields later, if applicable
         sense["subdefinitions"].append(subdef)
         example_target = subdef
 
@@ -143,6 +145,8 @@ def convert(rows):
                 ex = {"ipa": row.get("IPA")}
                 if row.get("ORTHOGRAPHY"):
                     ex["orthography"] = row.get("ORTHOGRAPHY")
+                if row.get("ORTHOGRAPHY (TONED)"):
+                    ex["orthography_toned"] = row.get("ORTHOGRAPHY (TONED)")
                 if row.get("ENG"):
                     ex["eng"] = row.get("ENG")
                 if row.get("FRA"):
@@ -170,18 +174,33 @@ def main():
     words, warnings = convert(rows)
 
     has_orthography = any(w.get("orthography") for w in words)
+    for w in words:
+        for s in w["senses"]:
+            for subdef in s["subdefinitions"]:
+                word_ref = subdef.pop("_word_ref")
+                if has_orthography:
+                    # a subdef's own ipa/orthography is often identical to
+                    # the word's headword (most directly when it's literally
+                    # the same source row that opened the word) - drop each
+                    # field independently when it matches, rather than
+                    # repeating it for every single word entry. Only done
+                    # when this dataset actually has orthography data -
+                    # rowland_oke_edition (no ORTHOGRAPHY column) stays a
+                    # complete, unedited digitization with nothing stripped.
+                    for key in ("ipa", "orthography", "orthography_toned"):
+                        if subdef.get(key) == word_ref.get(key):
+                            subdef.pop(key, None)
+
     if has_orthography:
         keyed = [
             (
-                (orthography_sort_key(w.get("orthography")), tone_sort_key(w["_toned"])),
+                (orthography_sort_key(w.get("orthography")), tone_sort_key(w.get("orthography_toned"))),
                 w,
             )
             for w in words
         ]
         keyed.sort(key=lambda pair: pair[0])
         words = [w for _, w in keyed]
-    for w in words:
-        w.pop("_toned", None)
 
     with open(out, "w", encoding="utf-8") as f:
         json.dump(words, f, ensure_ascii=False, indent=2)
