@@ -7,6 +7,7 @@ conventions map overlapping source symbols onto different targets
 (e.g. orthography maps both 'ɟ' and 'j' onto distinct outputs - chaining
 ɟ->j then j->y would corrupt the ɟ result).
 """
+import re
 import unicodedata
 
 ACUTE = '́'       # H (high) - always unmarked in orthography
@@ -198,7 +199,7 @@ def syllabic_ng_word_initial(chunks):
     return False
 
 
-def orthography_chunk(chunk_tokens, keep_tone, force_first_ng_as_n, is_last_chunk):
+def orthography_chunk(chunk_tokens, keep_tone, force_first_ng_as_n, is_last_chunk, keep_acute=False):
     out = []
     i, n = 0, len(chunk_tokens)
     while i < n:
@@ -241,7 +242,7 @@ def orthography_chunk(chunk_tokens, keep_tone, force_first_ng_as_n, is_last_chun
             i += 1
             continue
         elif t in TONE_MARKS:
-            if keep_tone and t != ACUTE and out:
+            if keep_tone and (t != ACUTE or keep_acute) and out:
                 out[-1] = out[-1] + t  # attach to the segment it belongs to
             i += 1
             continue
@@ -259,7 +260,12 @@ def is_ke_me_low_tone(chunk):
     return len(chunk) == 3 and chunk[0] in ('k', 'm') and chunk[1] == 'e' and chunk[2] == GRAVE
 
 
-def build_orthography(tokens):
+def build_orthography(tokens, full_tone=False):
+    """full_tone=True produces a reference form that keeps every tone mark
+    (including acute/high) instead of the normal "acute is unmarked, only
+    verb-prefixes keep non-acute tone" display convention. Structural
+    choices (hyphen-for-compound vs fused-for-verb, ny/ch/kp/gb etc.) are
+    unchanged - only the tone-stripping behavior differs."""
     tokens = remove_downstep_spacing(tokens)
     words = split_words_and_chunks(tokens)
     out_words = []
@@ -268,11 +274,12 @@ def build_orthography(tokens):
         is_verb_form = len(chunks) > 1 and count_nuclei(chunks[0]) == 1
         rendered = []
         for ci, chunk in enumerate(chunks):
-            keep_tone = (ci == 0 and is_verb_form) or (
+            keep_tone = full_tone or (ci == 0 and is_verb_form) or (
                 len(chunks) == 1 and is_ke_me_low_tone(chunk)
             )
             rendered.append(
-                orthography_chunk(chunk, keep_tone, force_n and ci == 0, ci == len(chunks) - 1)
+                orthography_chunk(chunk, keep_tone, force_n and ci == 0,
+                                   ci == len(chunks) - 1, keep_acute=full_tone)
             )
         joiner = '' if is_verb_form else '-'
         out_words.append(joiner.join(rendered))
@@ -314,3 +321,36 @@ def process_row(raw_ipa, row_index, row_type, eng):
     ortho = unicodedata.normalize('NFC', ortho).strip()
 
     return cleaned, ortho
+
+
+def reconstruct_pseudo_raw(cleaned_ipa):
+    """Reverse the cleaned-IPA substitutions to feed the existing
+    raw-IPA-oriented pipeline. Used when the source we have on hand is the
+    already-cleaned IPA column (e.g. after manual edits were made directly
+    to it, so re-deriving from a stale pristine backup would lose them)."""
+    s = cleaned_ipa
+    s = s.replace('ŋ' + 'ʷ', 'ŋw')
+    s = s.replace('k' + 'ʷ', 'kw')
+    s = s.replace('g' + 'ʷ', 'gw')
+    s = s.replace('d' + TIE_BAR + 'ʒ', 'ɟ')
+    s = s.replace('t' + TIE_BAR + 'ʃ', 'c')
+    s = s.replace(DOWNSTEP_OUT, " ' ")
+    s = re.sub(r'<([^>]*)>', r'\1', s)
+    return s
+
+
+def toned_orthography(raw_ipa, row_index):
+    """Reference form for sorting: orthography with every tone mark kept
+    (including acute/high), lowercase, no sentence-style capitalization."""
+    loanword = LOANWORD_TEXT.get(row_index)
+    working = raw_ipa
+    if loanword and loanword in working:
+        working = working.replace(loanword, PLACEHOLDER)
+
+    tokens = tokenize(working)
+    tokens = fill_syncope_vowels(tokens)
+
+    toned = build_orthography(tokens, full_tone=True)
+    if loanword:
+        toned = toned.replace(PLACEHOLDER, loanword)
+    return unicodedata.normalize('NFC', toned).strip()

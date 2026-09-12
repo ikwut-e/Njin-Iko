@@ -1,6 +1,71 @@
 import json
 import sys
+import unicodedata
 import openpyxl
+
+# Obolo alphabetical order (digraphs are single sort units)
+ALPHABET = ['a', 'b', 'ch', 'd', 'e', 'f', 'g', 'gb', 'gw', 'i', 'j', 'k', 'kp',
+            'kw', 'l', 'm', 'n', 'n̄', 'nw', 'ny', 'o', 'ọ', 'p', 'r', 's', 't',
+            'u', 'w', 'y']
+ALPHABET_RANK = {letter: i for i, letter in enumerate(ALPHABET)}
+MULTI_UNITS = sorted([u for u in ALPHABET if len(u) > 1], key=len, reverse=True)
+
+TONE_MARKS = {'́': 0, '̀': 1, '̂': 2, '̌': 3}  # acute,grave,circumflex,caron
+VOWELS = set('aeiou')
+
+
+def tokenize_alphabet(s):
+    """Greedy-tokenize a string into Obolo alphabet units for sorting.
+    Spaces/hyphens/apostrophes are ignored (skipped) rather than sorted."""
+    s = s.lower()
+    tokens = []
+    i, n = 0, len(s)
+    while i < n:
+        if s[i] in (' ', '-', "'"):
+            i += 1
+            continue
+        matched = next((u for u in MULTI_UNITS if s[i:i + len(u)] == u), None)
+        if matched:
+            tokens.append(matched)
+            i += len(matched)
+        else:
+            tokens.append(s[i])
+            i += 1
+    return tokens
+
+
+def orthography_sort_key(orthography):
+    if not orthography:
+        return ()
+    return tuple(ALPHABET_RANK.get(t, 99) for t in tokenize_alphabet(orthography))
+
+
+def tone_sort_key(toned_orthography):
+    """Tone rank per tone-bearing nucleus (vowel or syllabic consonant), in
+    order: high/unmarked=0, low=1, falling=2, rising=3. Used only as a
+    tie-break when two words are identical under orthography_sort_key."""
+    if not toned_orthography:
+        return ()
+    s = unicodedata.normalize('NFD', toned_orthography.lower())
+    tones = []
+    i, n = 0, len(s)
+    while i < n:
+        c = s[i]
+        if c in VOWELS or (c.isalpha() and c not in 'aeiou'):
+            is_nucleus = c in VOWELS
+            j = i + 1
+            found_tone = None
+            while j < n and unicodedata.category(s[j]) == 'Mn':
+                if s[j] in TONE_MARKS:
+                    found_tone = TONE_MARKS[s[j]]
+                    is_nucleus = True  # a consonant with a tone mark is syllabic
+                j += 1
+            if is_nucleus:
+                tones.append(found_tone if found_tone is not None else 0)
+            i = j
+        else:
+            i += 1
+    return tuple(tones)
 
 
 def leaf_data(row):
@@ -25,6 +90,7 @@ def convert(rows):
         word = {"ipa": row.get("IPA"), "senses": []}
         if row.get("ORTHOGRAPHY"):
             word["orthography"] = row.get("ORTHOGRAPHY")
+        word["_toned"] = row.get("ORTHOGRAPHY (TONED)") or ""
         words.append(word)
         new_sense(row)
 
@@ -102,6 +168,20 @@ def main():
     rows = [dict(zip(headers, r)) for r in raw_rows if any(v is not None for v in r)]
 
     words, warnings = convert(rows)
+
+    has_orthography = any(w.get("orthography") for w in words)
+    if has_orthography:
+        keyed = [
+            (
+                (orthography_sort_key(w.get("orthography")), tone_sort_key(w["_toned"])),
+                w,
+            )
+            for w in words
+        ]
+        keyed.sort(key=lambda pair: pair[0])
+        words = [w for _, w in keyed]
+    for w in words:
+        w.pop("_toned", None)
 
     with open(out, "w", encoding="utf-8") as f:
         json.dump(words, f, ensure_ascii=False, indent=2)

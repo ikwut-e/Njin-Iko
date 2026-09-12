@@ -29,6 +29,17 @@ function collectSearchText(word) {
   return normalize(parts.filter(Boolean).join(' '));
 }
 
+const ALPHABET_MULTI_UNITS = ['ch', 'gb', 'gw', 'kp', 'kw', 'nw', 'ny'];
+
+function firstAlphabetUnit(orthography) {
+  if (!orthography) return null;
+  const s = orthography.toLowerCase();
+  for (const u of ALPHABET_MULTI_UNITS) {
+    if (s.startsWith(u)) return u;
+  }
+  return s[0] || null;
+}
+
 function escapeHtml(s) {
   if (s === undefined || s === null) return '';
   return String(s)
@@ -136,7 +147,17 @@ function renderPage() {
   if (pageItems.length === 0) {
     listEl.innerHTML = `<div class="empty-state">No matching entries.</div>`;
   } else {
-    listEl.innerHTML = pageItems.map(renderWord).join('');
+    listEl.innerHTML = pageItems.map((word, i) => {
+      const globalIndex = start + i;
+      const unit = firstAlphabetUnit(word.orthography || word.ipa);
+      const prevUnit = globalIndex > 0
+        ? firstAlphabetUnit((visibleWords[globalIndex - 1].orthography || visibleWords[globalIndex - 1].ipa))
+        : null;
+      const heading = unit !== prevUnit
+        ? `<h2 class="letter-heading">${escapeHtml(unit ? unit.toUpperCase() : '?')}</h2>`
+        : '';
+      return heading + renderWord(word);
+    }).join('');
   }
 
   renderPagination();
