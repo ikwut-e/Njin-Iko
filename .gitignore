@@ -6,6 +6,11 @@ obolo_dict_backup*.xlsx
 ~$*.xlsx
 potential_verb_prefixes.txt
 
+# Working source files - only the generated JSONs and site logic are published.
+obolo_dict.xlsx
+rowland_oke_edition.xlsx
+hand_off_to_agent.txt
+
 # Unresolved image licensing (public Instagram source, no publisher clearance) -
 # kept local only, not published to the public repo.
 andoni_river.png
