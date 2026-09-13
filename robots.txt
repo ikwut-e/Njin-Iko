@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ikwut-e.github.io/Njin-Iko/sitemap.xml
